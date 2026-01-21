@@ -80,7 +80,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   </style>
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
    <div class="kt-card max-w-[370px] w-full">
-    <form action="{{ route('auth.login') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_in_form" method="get">
+    <form action="{{ route('auth.login') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_in_form" method="post">
         @csrf
      <div class="text-center mb-2.5">
       <h3 class="text-lg font-medium text-mono leading-none mb-2.5">
