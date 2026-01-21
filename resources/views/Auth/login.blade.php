@@ -80,8 +80,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   </style>
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
    <div class="kt-card max-w-[370px] w-full">
-    <form action="{{ route('auth.login') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_in_form" method="post">
-        @csrf
+    <form action="{{ route('auth.login') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_in_form" method="get">
      <div class="text-center mb-2.5">
       <h3 class="text-lg font-medium text-mono leading-none mb-2.5">
        Sign in
@@ -99,7 +98,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
       <label class="kt-form-label font-normal text-mono">
        Email
       </label>
-      <input class="kt-input" placeholder="email@email.com" type="text" value=""/>
+      <input class="kt-input" placeholder="email@email.com" type="text" name="email" value=""/>
      </div>
      <div class="flex flex-col gap-1">
       <div class="flex items-center justify-between gap-1">
@@ -111,7 +110,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
        </a>
       </div>
       <div class="kt-input" data-kt-toggle-password="true">
-       <input name="user_password" placeholder="Enter Password" type="password" value=""/>
+       <input name="password" placeholder="Enter Password" type="password" value=""/>
        <button class="kt-btn kt-btn-sm kt-btn-ghost kt-btn-icon bg-transparent! -me-1.5" data-kt-toggle-password-trigger="true" type="button">
         <span class="kt-toggle-password-active:hidden">
          <i class="ki-filled ki-eye text-muted-foreground">
