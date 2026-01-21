@@ -78,6 +78,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 			background-image: url('assets/media/images/2600x1200/bg-10-dark.png');
 		}
   </style>
+  @include('partials.alert')
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
    <div class="kt-card max-w-[370px] w-full">
     <form action="{{ route('auth.register') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_up_form" method="post">
