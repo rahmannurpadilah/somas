@@ -12,7 +12,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 <html class="h-full" data-kt-theme="true" data-kt-theme-mode="light" dir="ltr" lang="en">
  <head><base href="../../../../../">
   <title>
-   Metronic - Tailwind CSS Sign In
+   Login
   </title>
   <meta charset="utf-8"/>
   <meta content="follow, index" name="robots"/>
@@ -89,7 +89,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
        <span class="text-sm text-secondary-foreground me-1.5">
         Need an account?
        </span>
-       <a class="text-sm link" href="html/demo4/authentication/classic/sign-up.html">
+       <a class="text-sm link" href="{{ route('auth.register') }}">
         Sign up
        </a>
       </div>

@@ -10,13 +10,13 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 -->
 <!DOCTYPE html>
 <html class="h-full" data-kt-theme="true" data-kt-theme-mode="light" dir="ltr" lang="en">
- <head><base href="../../../../../">
+ <head><base href="../../../../">
   <title>
-   Metronic - Tailwind CSS Sign Up
+   Register
   </title>
   <meta charset="utf-8"/>
   <meta content="follow, index" name="robots"/>
-  <link href="https://127.0.0.1:8001/metronic-tailwind-html/demo4/authentication/classic/sign-up/index.html" rel="canonical"/>
+  <link href="https://127.0.0.1:8001/metronic-tailwind-html/demo1/authentication/classic/sign-up" rel="canonical"/>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
   <meta content="Sign up page, powered by Tailwind CSS" name="description"/>
   <meta content="@keenthemes" name="twitter:site"/>
@@ -25,7 +25,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   <meta content="Metronic - Tailwind CSS Sign Up" name="twitter:title"/>
   <meta content="Sign up page, powered by Tailwind CSS" name="twitter:description"/>
   <meta content="assets/media/app/og-image.png" name="twitter:image"/>
-  <meta content="https://127.0.0.1:8001/metronic-tailwind-html/demo4/authentication/classic/sign-up/index.html" property="og:url"/>
+  <meta content="https://127.0.0.1:8001/metronic-tailwind-html/demo1/authentication/classic/sign-up" property="og:url"/>
   <meta content="en_US" property="og:locale"/>
   <meta content="website" property="og:type"/>
   <meta content="@keenthemes" property="og:site_name"/>
@@ -89,12 +89,11 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
        <span class="text-sm text-secondary-foreground me-1.5">
         Already have an Account ?
        </span>
-       <a class="text-sm link" href="html/demo4/authentication/classic/sign-in.html">
+       <a class="text-sm link" href="{{ route('auth.login') }}">
         Sign In
        </a>
       </div>
      </div>
-     <div class="flex items-center gap-2">
      <div class="flex flex-col gap-1">
       <label class="kt-form-label text-mono">
        Email

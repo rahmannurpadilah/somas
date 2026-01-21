@@ -132,6 +132,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             </span>
            </div>
           </div>
+          {{-- Yt --}}
           <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
            <img alt="" class="w-7 mt-4 ms-5" src="assets/media/brand-logos/youtube-2.svg"/>
            <div class="flex flex-col gap-1 pb-4 px-5">
@@ -143,6 +144,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             </span>
            </div>
           </div>
+          {{-- Instagram --}}
           <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
            <img alt="" class="w-7 mt-4 ms-5" src="assets/media/brand-logos/instagram-03.svg"/>
            <div class="flex flex-col gap-1 pb-4 px-5">
@@ -154,6 +156,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             </span>
            </div>
           </div>
+          {{-- Tiktok --}}
           <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
            <img alt="" class="dark:hidden w-7 mt-4 ms-5" src="assets/media/brand-logos/tiktok.svg"/>
            <img alt="" class="hidden dark:block w-7 mt-4 ms-5" src="assets/media/brand-logos/tiktok-dark.svg"/>
