@@ -81,7 +81,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
       @include('partials.alert')
    <div class="kt-card max-w-[370px] w-full">
-    <form action="{{ route('auth.register') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_up_form" method="post">
+    <form action="{{ route('auth.register.post') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_up_form" method="post">
         @csrf
      <div class="text-center mb-2.5">
       <h3 class="text-lg font-medium text-mono leading-none mb-2.5">
