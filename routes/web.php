@@ -19,7 +19,8 @@ Route::middleware('guest')->group(function () {
     Route::get('/register', [AuthController::class, 'showRegis'])
         ->name('auth.register');
 
-    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/register', [AuthController::class, 'register'])
+        ->name('auth.register.post');
 
     // ===== FORGOT PASSWORD =====
     Route::get('/forgot-password', [AuthController::class, 'showForgotPassword'])
