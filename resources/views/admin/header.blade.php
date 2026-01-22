@@ -859,7 +859,7 @@
           <div class="kt-menu-item" data-kt-menu-item-offset="-300px, 0" data-kt-menu-item-offset-rtl="300px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="accordion|lg:dropdown" data-kt-menu-item-trigger="click|lg:hover">
            <div class="kt-menu-link text-sm text-secondary-foreground font-medium kt-menu-link-hover:text-primary kt-menu-item-active:text-mono kt-menu-item-show:text-primary kt-menu-item-here:text-mono kt-menu-item-active:font-semibold kt-menu-item-here:font-semibold">
             <span class="kt-menu-title text-nowrap">
-             Network
+             Add New Source
             </span>
             <span class="kt-menu-arrow flex lg:hidden">
              <span class="kt-menu-item-show:hidden text-muted-foreground">
@@ -1068,7 +1068,7 @@
           </div>
           <!--End of Megamenu Item-->
           <!--Megamenu Item-->
-          <div class="kt-menu-item" data-kt-menu-item-offset="-300px, 0" data-kt-menu-item-offset-rtl="300px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="accordion|lg:dropdown" data-kt-menu-item-trigger="click|lg:hover">
+          {{-- <div class="kt-menu-item" data-kt-menu-item-offset="-300px, 0" data-kt-menu-item-offset-rtl="300px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="accordion|lg:dropdown" data-kt-menu-item-trigger="click|lg:hover">
            <div class="kt-menu-link text-sm text-secondary-foreground font-medium kt-menu-link-hover:text-primary kt-menu-item-active:text-mono kt-menu-item-show:text-primary kt-menu-item-here:text-mono kt-menu-item-active:font-semibold kt-menu-item-here:font-semibold">
             <span class="kt-menu-title text-nowrap">
              Store
@@ -1244,10 +1244,10 @@
              </a>
             </div>
            </div>
-          </div>
+          </div> --}}
           <!--End of Megamenu Item-->
           <!--Megamenu Item-->
-          <div class="kt-menu-item" data-kt-menu-item-offset="-300px, 0" data-kt-menu-item-offset-rtl="300px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="accordion|lg:dropdown" data-kt-menu-item-trigger="click|lg:hover">
+          {{-- <div class="kt-menu-item" data-kt-menu-item-offset="-300px, 0" data-kt-menu-item-offset-rtl="300px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="accordion|lg:dropdown" data-kt-menu-item-trigger="click|lg:hover">
            <div class="kt-menu-link text-sm text-secondary-foreground font-medium kt-menu-link-hover:text-primary kt-menu-item-active:text-mono kt-menu-item-show:text-primary kt-menu-item-here:text-mono kt-menu-item-active:font-semibold kt-menu-item-here:font-semibold">
             <span class="kt-menu-title text-nowrap">
              Authentication
@@ -1471,10 +1471,10 @@
              </a>
             </div>
            </div>
-          </div>
+          </div> --}}
           <!--End of Megamenu Item-->
           <!--Megamenu Item-->
-          <div class="kt-menu-item" data-kt-menu-item-offset="0,0|lg:-20px, 0" data-kt-menu-item-offset-rtl="0,0|lg:20px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click|lg:hover">
+          {{-- <div class="kt-menu-item" data-kt-menu-item-offset="0,0|lg:-20px, 0" data-kt-menu-item-offset-rtl="0,0|lg:20px, 0" data-kt-menu-item-overflow="true" data-kt-menu-item-placement="bottom-start" data-kt-menu-item-placement-rtl="bottom-end" data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click|lg:hover">
            <div class="kt-menu-link text-sm text-secondary-foreground font-medium kt-menu-link-hover:text-primary kt-menu-item-active:text-mono kt-menu-item-show:text-primary kt-menu-item-here:text-mono kt-menu-item-active:font-semibold kt-menu-item-here:font-semibold">
             <span class="kt-menu-title text-nowrap">
              Help
@@ -1595,7 +1595,7 @@
              </a>
             </div>
            </div>
-          </div>
+          </div> --}}
           <!--End of Megamenu Item-->
          </div>
          <!--End of Megamenu-->

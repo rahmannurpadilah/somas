@@ -91,9 +91,9 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
        <span class="text-sm text-secondary-foreground me-1.5">
         Need an account?
        </span>
-       <a class="text-sm link" href="{{ route('auth.register') }}">
+       {{-- <a class="text-sm link" href="{{ route('auth.register') }}">
         Sign up
-       </a>
+       </a> --}}
       </div>
      </div>
      <div class="flex flex-col gap-1">

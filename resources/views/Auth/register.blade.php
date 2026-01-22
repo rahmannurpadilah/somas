@@ -148,9 +148,9 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
        </a>
       </span>
      </label>
-     <button class="kt-btn kt-btn-primary flex justify-center grow">
+     {{-- <button class="kt-btn kt-btn-primary flex justify-center grow">
       Sign up
-     </button>
+     </button> --}}
     </form>
    </div>
   </div>
