@@ -73,7 +73,7 @@
 		background-image: url('assets/media/images/2600x1600/2-dark.png');
 	}
          </style>
-         <div class="kt-card h-full h-full">
+         {{-- <div class="kt-card h-full h-full">
           <div class="kt-card-content p-10 bg-[length:80%] rtl:[background-position:-70%_25%] [background-position:175%_25%] bg-no-repeat entry-callout-bg">
            <div class="flex flex-col justify-center gap-4">
             <div class="flex -space-x-2">
@@ -114,7 +114,7 @@
             Get Started
            </a>
           </div>
-         </div>
+         </div> --}}
         </div>
        </div>
        <!-- end: grid -->
