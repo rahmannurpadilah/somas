@@ -2,6 +2,9 @@
 
 @section('content')
 
+@include('partials.alert')
+
+
 <a href="{{ route('admin.user.create') }}">Create User</a>
 
 <table border="1" cellpadding="10" cellspacing="0">

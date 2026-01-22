@@ -4,6 +4,9 @@
 
 <h3>Edit User</h3>
 
+@include('partials.alert')
+
+
 <form action="{{ route('admin.user.update') }}" method="POST">
     @csrf
 

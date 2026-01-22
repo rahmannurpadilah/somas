@@ -4,6 +4,8 @@
 
 <h3>Create User</h3>
 
+@include('partials.alert')
+
 <form action="{{ route('admin.user.make') }}" method="POST">
     @csrf
 
