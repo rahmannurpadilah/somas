@@ -16,11 +16,11 @@ Route::middleware('guest')->group(function () {
         ->name('auth.login.post');
 
     // ===== REGISTER =====
-    Route::get('/register', [AuthController::class, 'showRegis'])
-        ->name('auth.register');
+    // Route::get('/register', [AuthController::class, 'showRegis'])
+    //     ->name('auth.register');
 
-    Route::post('/register', [AuthController::class, 'register'])
-        ->name('auth.register.post');
+    // Route::post('/register', [AuthController::class, 'register'])
+    //     ->name('auth.register.post');
 
     // ===== FORGOT PASSWORD =====
     Route::get('/forgot-password', [AuthController::class, 'showForgotPassword'])

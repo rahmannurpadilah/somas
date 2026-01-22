@@ -29,14 +29,14 @@ class AuthController extends Controller
     /**
      * Show register form
      */
-    public function showRegis(): View | RedirectResponse
-    {
-        if (Auth::check()) {
-            return redirect('/');
-        }
+    // public function showRegis(): View | RedirectResponse
+    // {
+    //     if (Auth::check()) {
+    //         return redirect('/');
+    //     }
 
-        return view('Auth.register');
-    }
+    //     return view('Auth.register');
+    // }
 
     /**
      * Handle login request
@@ -81,31 +81,31 @@ class AuthController extends Controller
      * Handle register request
      * Compatible with Metronic register form (tanpa field name)
      */
-    public function register(Request $request): RedirectResponse
-    {
-        $validated = $request->validate([
-            'email'                 => 'required|email|unique:users,email',
-            'password'              => 'required|min:8|confirmed',
-            'password_confirmation' => 'required',
-        ]);
+    // public function register(Request $request): RedirectResponse
+    // {
+    //     $validated = $request->validate([
+    //         'email'                 => 'required|email|unique:users,email',
+    //         'password'              => 'required|min:8|confirmed',
+    //         'password_confirmation' => 'required',
+    //     ]);
 
-        try {
-            User::create([
-                // name tidak ada di form → generate otomatis dari email
-                'name'     => Str::before($validated['email'], '@'),
-                'email'    => $validated['email'],
-                'password' => Hash::make($validated['password']),
-            ]);
+    //     try {
+    //         User::create([
+    //             // name tidak ada di form → generate otomatis dari email
+    //             'name'     => Str::before($validated['email'], '@'),
+    //             'email'    => $validated['email'],
+    //             'password' => Hash::make($validated['password']),
+    //         ]);
 
-            return redirect()
-                ->route('auth.login')
-                ->with('success', 'Registrasi berhasil, silakan login');
-        } catch (\Throwable $e) {
-            return back()
-                ->withErrors(['error' => 'Terjadi kesalahan saat registrasi'])
-                ->withInput();
-        }
-    }
+    //         return redirect()
+    //             ->route('auth.login')
+    //             ->with('success', 'Registrasi berhasil, silakan login');
+    //     } catch (\Throwable $e) {
+    //         return back()
+    //             ->withErrors(['error' => 'Terjadi kesalahan saat registrasi'])
+    //             ->withInput();
+    //     }
+    // }
 
     /**
      * Show forgot password form
