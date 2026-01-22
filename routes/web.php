@@ -35,4 +35,5 @@ Route::middleware('guest')->group(function () {
     Route::post('/reset-password', [AuthController::class, 'resetPassword']);
 });
 
+require __DIR__.'/admin.php';
 require __DIR__.'/user.php';
