@@ -5,7 +5,7 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['user'])->group(function () {
-    
+
     Route::prefix('admin')->name('admin.')->group(function() {
         Route::get('/users/index', [UserController::class, 'index'])->name('user.index');
         Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
