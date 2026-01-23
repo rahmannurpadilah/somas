@@ -105,6 +105,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   <script src="{{ asset('assets/js/widgets/general.js') }}"">
   </script>
   <script src="{{ asset('assets/js/layouts/demo1.js') }}"">
-  </script>
+   </script>
  </body>
 </html>
