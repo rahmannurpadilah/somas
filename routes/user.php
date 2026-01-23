@@ -19,7 +19,7 @@ Route::middleware(['user'])->group(function () {
 
     // ===== DASHBOARD =====
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('admin.dashboard');
     })->name('dashboard');
 
     // ===== CONTOH MODULE SOMAS =====
