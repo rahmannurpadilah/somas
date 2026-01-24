@@ -1,50 +1,80 @@
 @extends('admin.layout')
 @section('content')
+    @include('partials.alert')
+    <div class="kt-container-fixed">
+        <div class="grid gap-5 lg:gap-7.5">
+            <div class="kt-card max-w-2xl">
 
-<h1>Edit Content Source</h1>
+                <div class="kt-card-header">
+                    <h3 class="kt-card-title">
+                        Edit Content Source
+                    </h3>
+                </div>
 
-@include('partials.alert')
+                <div class="kt-card-content">
+                    <form action="{{ route('content-source.update') }}" method="POST" class="grid gap-5">
+                        @csrf
 
-<form method="POST" action="{{ route('content-source.update') }}">
-    @csrf
+                        <input type="hidden" name="hash" value="{{ $hash }}">
 
-    <input type="hidden" name="hash" value="{{ $hash }}">
 
-    <p>
-        Platform:
-        <select name="platform">
-            <option value="instagram" {{ $source->platform == 'instagram' ? 'selected' : '' }}>Instagram</option>
-            <option value="tiktok" {{ $source->platform == 'tiktok' ? 'selected' : '' }}>TikTok</option>
-        </select>
-    </p>
+                        <div class="grid gap-1.5">
+                            <label class="kt-form-label">Platform</label>
+                            <select name="platform" class="kt-select">
+                                <option value="instagram" {{ $source->platform == 'instagram' ? 'selected' : ''  }}>
+                                    Instagram
+                                </option>
+                                <option value="tiktok" {{ $source->platform == 'tiktok' ? 'selected' : '' }}>
+                                    Tiktok
+                                </option>
+                            </select>
+                        </div>
 
-    <p>
-        Type:
-        <select name="type">
-            <option value="username" {{ $source->type == 'username' ? 'selected' : '' }}>Username</option>
-            <option value="hashtag" {{ $source->type == 'hashtag' ? 'selected' : '' }}>Hashtag</option>
-        </select>
-    </p>
+                        <div class="grid gap-1.5">
+                            <label class="kt-form-label">Type</label>
+                            <select name="type" class="kt-select">
+                                <option value="username" {{ $source->type == 'username' ? 'selected' : '' }}>
+                                    Username
+                                </option>
+                                <option value="hashtag" {{ $source->type == 'hashtag' ? 'selected' : '' }}>
+                                    Hashtag
+                                </option>
+                            </select>
+                        </div>
 
-    <p>
-        Identifier:
-        <input type="text" name="identifier" value="{{ $source->identifier }}">
-    </p>
+                        <div class="grid gap-1.5">
+                            <label class="kt-form-label">Identifier</label>
+                            <input type="text" name="identifier" class="kt-input" value="{{ $source->identifier }}" required>
+                        </div>
 
-    <p>
-        Category:
-        <input type="text" name="category" value="{{ $source->category }}">
-    </p>
+                        <div class="grid gap-1.5">
+                            <label class="kt-form-label">Category</label>
+                            <input type="text" name="category" class="kt-input" value="{{ $source->category }}" required>
+                        </div>
 
-    <p>
-        Status:
-        <select name="is_active">
-            <option value="1" {{ $source->is_active ? 'selected' : '' }}>Aktif</option>
-            <option value="0" {{ !$source->is_active ? 'selected' : '' }}>Nonaktif</option>
-        </select>
-    </p>
+                            <div class="grid gap-1.5">
+                            <label class="kt-form-label">Status</label>
+                            <select name="is_active" class="kt-select">
+                                <option value="1" {{ $source->is_active  ? 'selected' : '' }}>Aktif                             
+                                </option>
+                                <option value="0" {{ $source->is_active ? 'selected' : '' }}>Nonaktif
+                                </option>
+                            </select>
+                        </div>
 
-    <button type="submit">Update</button>
-</form>
+                        <div class="flex items-center gap-2 pt-4">
+                            <button type="submit" class="kt-btn kt-btn-primary">
+                                Simpan
+                            </button>
 
+                            <a href="{{ route('content-source.index') }}" class="kt-btn kt-btn-outline">
+                                Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 @endsection

@@ -24,7 +24,6 @@
                             type="text"
                             name="name"
                             class="kt-input"
-                            value="{{ old('name') }}"
                             required
                         >
                     </div>
@@ -35,7 +34,6 @@
                             type="email"
                             name="email"
                             class="kt-input"
-                            value="{{ old('email') }}"
                             required
                         >
                     </div>
@@ -53,10 +51,10 @@
                     <div class="grid gap-1.5">
                         <label class="kt-form-label">Role</label>
                         <select name="role" class="kt-select">
-                            <option value="user" {{ old('role') === 'user' ? 'selected' : '' }}>
+                            <option value="user">
                                 User
                             </option>
-                            <option value="admin" {{ old('role') === 'admin' ? 'selected' : '' }}>
+                            <option value="admin">
                                 Admin
                             </option>
                         </select>

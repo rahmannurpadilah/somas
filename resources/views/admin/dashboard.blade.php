@@ -1,5 +1,6 @@
 @extends('admin.layout')
 @section('content')
+@include('partials.alert')
       <div class="kt-container-fixed">
       <div class="grid gap-5 lg:gap-7.5">
        <!-- begin: grid -->

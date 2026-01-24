@@ -10,7 +10,7 @@
     -->
     <!DOCTYPE html>
     <html class="h-full" data-kt-theme="true" data-kt-theme-mode="light" dir="ltr" lang="en">
-    <head><base href="../../">
+    <head>
     <title>
     SOMAS
     </title>
@@ -24,24 +24,26 @@
     <meta content="summary_large_image" name="twitter:card"/>
     <meta content="Metronic - Tailwind CSS " name="twitter:title"/>
     <meta content="" name="twitter:description"/>
-    <meta content="{{ asset('assets/media/app/og-image.png') }}"" name="twitter:image"/>
+    <meta content="{{ asset('assets/media/app/og-image.png') }}" name="twitter:image"/>
     <meta content="https://127.0.0.1:8001/metronic-tailwind-html/demo1/index.html" property="og:url"/>
     <meta content="en_US" property="og:locale"/>
     <meta content="website" property="og:type"/>
     <meta content="@keenthemes" property="og:site_name"/>
     <meta content="Metronic - Tailwind CSS " property="og:title"/>
     <meta content="" property="og:description"/>
-    <meta content="{{ asset('assets/media/app/og-image.png') }}"" property="og:image"/>
-    <link href="{{ asset('assets/media/app/apple-touch-icon.png') }}"" rel="apple-touch-icon" sizes="180x180"/>
-    <link href="{{ asset('assets/media/app/favicon-32x32.png') }}"" rel="icon" sizes="32x32" type="image/png"/>
-    <link href="{{ asset('assets/media/app/favicon-16x16.png') }}"" rel="icon" sizes="16x16" type="image/png"/>
-    <link href="{{ asset('assets/media/app/favicon.ico') }}"" rel="shortcut icon"/>
+    <meta content="{{ asset('assets/media/app/og-image.png') }}" property="og:image"/>
+    <link href="{{ asset('assets/media/app/apple-touch-icon.png') }}" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="{{ asset('assets/media/app/favicon-32x32.png') }}" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="{{ asset('assets/media/app/favicon-16x16.png') }}" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="{{ asset('assets/media/app/favicon.ico') }}" rel="shortcut icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-    <link href="{{ asset('assets/vendors/apexcharts/apexcharts.css') }}"" rel="stylesheet"/>
-    <link href="{{ asset('assets/vendors/keenicons/styles.bundle.css') }}"" rel="stylesheet"/>
-    <link href="{{ asset('assets/css/styles.css') }}"" rel="stylesheet"/>
+    <link href="{{ asset('assets/vendors/apexcharts/apexcharts.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/vendors/keenicons/styles.bundle.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/css/demo1.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"/>
     </head>
-    <body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed">
+    <body  class="kt-app antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed"
+  data-kt-app-layout="true">
     <!-- Theme Mode -->
     <script>
     const defaultThemeMode = 'light'; // light|dark|system
@@ -96,15 +98,15 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('assets/js/core.bundle.js') }}"">
+    <script src="{{ asset('assets/js/core.bundle.js') }}">
     </script>
-    <script src="{{ asset('assets/vendors/ktui/ktui.min.js') }}"">
+    <script src="{{ asset('assets/vendors/ktui/ktui.min.js') }}">
     </script>
-    <script src="{{ asset('assets/vendors/apexcharts/apexcharts.min.js') }}"">
+    <script src="{{ asset('assets/vendors/apexcharts/apexcharts.min.js') }}">
     </script>
-    <script src="{{ asset('assets/js/widgets/general.js') }}"">
+    <script src="{{ asset('assets/js/widgets/general.js') }}">
     </script>
-    <script src="{{ asset('assets/js/layouts/demo1.js') }}"">
+    <script src="{{ asset('assets/js/layouts/demo1.js') }}">
     </script>
     </body>
     </html>

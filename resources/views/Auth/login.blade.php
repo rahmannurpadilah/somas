@@ -24,22 +24,22 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="Metronic - Tailwind CSS Sign In" name="twitter:title"/>
   <meta content="Sign in page using Tailwind CSS" name="twitter:description"/>
-  <meta content="assets/media/app/og-image.png" name="twitter:image"/>
+  <meta content="{{ asset('assets/media/app/og-image.png') }}"" name="twitter:image"/>
   <meta content="https://127.0.0.1:8001/metronic-tailwind-html/demo4/authentication/classic/sign-in/index.html" property="og:url"/>
   <meta content="en_US" property="og:locale"/>
   <meta content="website" property="og:type"/>
   <meta content="@keenthemes" property="og:site_name"/>
   <meta content="Metronic - Tailwind CSS Sign In" property="og:title"/>
   <meta content="Sign in page using Tailwind CSS" property="og:description"/>
-  <meta content="assets/media/app/og-image.png" property="og:image"/>
-  <link href="assets/media/app/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-  <link href="assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="assets/media/app/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="assets/media/app/favicon.ico" rel="shortcut icon"/>
+  <meta content="{{ asset('assets/media/app/og-image.png') }}" property="og:image"/>
+  <link href="{{ asset('assets/media/app/apple-touch-icon.png') }}" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="{{ asset('assets/media/app/favicon-32x32.png') }}" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="{{ asset('assets/media/app/favicon-16x16.png') }}" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="{{ asset('assets/media/app/favicon.ico') }}" rel="shortcut icon"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="assets/vendors/apexcharts/apexcharts.css" rel="stylesheet"/>
-  <link href="assets/vendors/keenicons/styles.bundle.css" rel="stylesheet"/>
-  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <link href="{{ asset('assets/vendors/apexcharts/apexcharts.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('assets/vendors/keenicons/styles.bundle.css') }}" rel="stylesheet"/>
+  <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"/>
  </head>
  <body class="antialiased flex h-full text-base text-foreground bg-background">
   <!-- Theme Mode -->
@@ -78,9 +78,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 			background-image: url('assets/media/images/2600x1200/bg-10-dark.png');
 		}
   </style>
-  <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
       @include('partials.alert')
+  <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
       <div class="kt-card max-w-[370px] w-full">
+
     <form action="{{ route('auth.login.post') }}" class="kt-card-content flex flex-col gap-5 p-10" id="sign_in_form" method="post">
         @csrf
      <div class="text-center mb-2.5">
@@ -139,11 +140,11 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   </div>
   <!-- End of Page -->
   <!-- Scripts -->
-  <script src="assets/js/core.bundle.js">
+  <script src="{{ asset('assets/js/core.bundle.js') }}">
   </script>
-  <script src="assets/vendors/ktui/ktui.min.js">
+  <script src="{{ asset('assets/vendors/ktui/ktui.min.js') }}">
   </script>
-  <script src="assets/vendors/apexcharts/apexcharts.min.js">
+  <script src="{{ asset('assets/vendors/apexcharts/apexcharts.min.js') }}">
   </script>
   <!-- End of Scripts -->
  </body>
