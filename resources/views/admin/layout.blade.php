@@ -42,60 +42,56 @@
     <link href="{{ asset('assets/css/demo1.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"/>
     </head>
-    <body  class="kt-app antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed"
-  data-kt-app-layout="true">
-    <!-- Theme Mode -->
-    <script>
-    const defaultThemeMode = 'light'; // light|dark|system
-                let themeMode;
+    <body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed">
+        <!-- Theme Mode -->
+  <script>
+   const defaultThemeMode = 'light'; // light|dark|system
+			let themeMode;
 
-                if (document.documentElement) {
-                    if (localStorage.getItem('kt-theme')) {
-                        themeMode = localStorage.getItem('kt-theme');
-                    } else if (
-                        document.documentElement.hasAttribute('data-kt-theme-mode')
-                    ) {
-                        themeMode =
-                            document.documentElement.getAttribute('data-kt-theme-mode');
-                    } else {
-                        themeMode = defaultThemeMode;
-                    }
+			if (document.documentElement) {
+				if (localStorage.getItem('kt-theme')) {
+					themeMode = localStorage.getItem('kt-theme');
+				} else if (
+					document.documentElement.hasAttribute('data-kt-theme-mode')
+				) {
+					themeMode =
+						document.documentElement.getAttribute('data-kt-theme-mode');
+				} else {
+					themeMode = defaultThemeMode;
+				}
 
-                    if (themeMode === 'system') {
-                        themeMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-                            ? 'dark'
-                            : 'light';
-                    }
+				if (themeMode === 'system') {
+					themeMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+						? 'dark'
+						: 'light';
+				}
 
-                    document.documentElement.classList.add(themeMode);
-                }
-    </script>
-    <!-- End of Theme Mode -->
-    <!-- Page -->
-    <!-- Main -->
-    <div class="flex grow">
-    <!-- Sidebar -->
-    @include('admin.sidebar')
-    <!-- End of Sidebar -->
-    <!-- Wrapper -->
-    <div class="kt-wrapper flex grow flex-col">
-        <!-- Header -->
-        @include('admin.header')
-        <!-- End of Header -->
-        <!-- Content -->
-        <main class="grow pt-5" id="content" role="content">
-            <!-- Container -->
-            {{-- <div class="kt-container-fixed">
-                <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
-                </div>
-            </div> --}}
-            @yield('content')
-        <!-- End of Container -->
-        </main>
-        <!-- End of Content -->
-    </div>
-    <!-- End of Wrapper -->
-    </div>
+				document.documentElement.classList.add(themeMode);
+			}
+  </script>
+  <!-- End of Theme Mode -->
+  <!-- Page -->
+  <!-- Main -->
+  <div class="flex grow">
+   <!-- Sidebar -->
+   @include('admin.sidebar')
+   <!-- End of Sidebar -->
+   <!-- Wrapper -->
+   <div class="kt-wrapper flex grow flex-col">
+    <!-- Header -->
+    @include('admin.header')
+    <!-- End of Header -->
+    <!-- Content -->
+    <main class="grow pt-5" id="content" role="content">
+     <!-- Container -->
+        @yield('content')
+     <!-- End of Container -->
+    </main>
+    <!-- End of Footer -->
+   </div>
+   <!-- End of Wrapper -->
+  </div>
+  <!-- End of Page -->
 
     <!-- Scripts -->
     <script src="{{ asset('assets/js/core.bundle.js') }}">
