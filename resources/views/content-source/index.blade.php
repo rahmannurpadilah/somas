@@ -81,7 +81,7 @@
                                                     {{ $s->is_active ? 'Aktif' : 'Nonaktif' }}
                                                 </span>
                                             </td>
-                                            
+
                                             <td>
                                                 <a href="{{ route('content-source.edit', Crypt::encrypt($s->id)) }}"
                                                     class="kt-btn kt-btn-sm kt-btn-outline kt-btn-primary">
@@ -120,5 +120,6 @@
                 </div>
             </div>
         </div>
+    </div>
 
 @endsection

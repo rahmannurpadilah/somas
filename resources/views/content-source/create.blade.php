@@ -8,7 +8,7 @@
 
             <div class="kt-card-header">
                 <h3 class="kt-card-title">
-                    Add Source Content
+                    Add New Source Content
                 </h3>
             </div>
 

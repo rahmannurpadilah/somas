@@ -53,13 +53,20 @@
                         </div>
 
                             <div class="grid gap-1.5">
-                            <label class="kt-form-label">Status</label>
-                            <select name="is_active" class="kt-select">
-                                <option value="1" {{ $source->is_active  ? 'selected' : '' }}>Aktif                             
-                                </option>
-                                <option value="0" {{ $source->is_active ? 'selected' : '' }}>Nonaktif
-                                </option>
-                            </select>
+                                <select name="is_active" class="kt-select">
+                                    <option value="1" {{ $source->is_active  ? 'selected' : '' }}>Aktif
+                                    </option>
+                                    <option value="0" {{ $source->is_active ? 'selected' : '' }}>Nonaktif
+                                    </option>
+                                </select>
+                                {{-- <div class="flex items-center justify-between flex-wrap gap-2 px-5 py-3.5">
+                                    <div class="flex items-center flex-wrap gap-2">
+                                        <label class="kt-form-label">Status</label>
+                                    </div>
+                                    <div class="flex items-center gap-2 lg:gap-5">
+                                        <input checked type="checkbox" class="kt-switch" value="1"{{ $source->is_active ? 'chechked' : '' }}>
+                                </div>
+                            </div> --}}
                         </div>
 
                         <div class="flex items-center gap-2 pt-4">
