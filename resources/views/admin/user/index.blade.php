@@ -12,9 +12,6 @@
                     </h1>
                 </div>
                 <div class="flex items-center">
-                    {{-- <a class="kt-btn kt-btn-outline" href="#">
-                        Import CSV
-                    </a> --}}
                     <a class="kt-btn kt-btn-primary" href="{{ route('admin.user.create') }}">
                         Add Users
                         <i class="ki-filled ki-plus"></i>
@@ -71,7 +68,7 @@
                                                     {{ $user->role }}
                                                 </span>
                                             </td>
-                                            
+
                                             <td>
                                                 <a href="{{ route('admin.user.edit', Crypt::encrypt($user->id)) }}"
                                                     class="kt-btn kt-btn-sm kt-btn-outline kt-btn-primary">
@@ -112,3 +109,4 @@
         </div>
     </div>
 @endsection
+

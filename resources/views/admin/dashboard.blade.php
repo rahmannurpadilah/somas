@@ -9,10 +9,10 @@
          <div class="grid grid-cols-2 gap-5 lg:gap-7.5 h-full items-stretch">
           <style>
            .channel-stats-bg {
-		background-image: url('assets/media/images/2600x1600/bg-3.png');
+		background-image: url('{{ asset('assets/media/images/2600x1600/bg-3.png') }}');
 	}
 	.dark .channel-stats-bg {
-		background-image: url('assets/media/images/2600x1600/bg-3-dark.png');
+		background-image: url('{{ asset('assets/media/images/2600x1600/bg-3-dark.png') }}');
 	}
           </style>
           <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">

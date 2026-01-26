@@ -24,7 +24,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="Metronic - Tailwind CSS Sign In" name="twitter:title"/>
   <meta content="Sign in page using Tailwind CSS" name="twitter:description"/>
-  <meta content="{{ asset('assets/media/app/og-image.png') }}"" name="twitter:image"/>
+  <meta content="{{ asset('assets/media/app/og-image.png') }}" name="twitter:image"/>
   <meta content="https://127.0.0.1:8001/metronic-tailwind-html/demo4/authentication/classic/sign-in/index.html" property="og:url"/>
   <meta content="en_US" property="og:locale"/>
   <meta content="website" property="og:type"/>
@@ -72,10 +72,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
   <!-- Page -->
   <style>
    .page-bg {
-			background-image: url('assets/media/images/2600x1200/bg-10.png');
+			background-image: url('{{ asset('assets/media/images/2600x1200/bg-10.png') }}');
 		}
 		.dark .page-bg {
-			background-image: url('assets/media/images/2600x1200/bg-10-dark.png');
+			background-image: url('{{ asset('assets/media/images/2600x1200/bg-10-dark.png') }}');
 		}
   </style>
   <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
