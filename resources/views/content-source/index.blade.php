@@ -102,7 +102,6 @@
                                                     <button class="kt-btn">Scrape Sekarang</button>
                                                 </form>
                                             </td>
-                                            <td></td>
                                         </tr>
                                     @endforeach
                                 </tbody>

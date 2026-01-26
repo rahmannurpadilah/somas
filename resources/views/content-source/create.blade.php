@@ -56,7 +56,6 @@
                             type="text"
                             name="category"
                             class="kt-input"
-                            required
                         >
                     </div>
 
