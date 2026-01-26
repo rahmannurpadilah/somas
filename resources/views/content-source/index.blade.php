@@ -82,7 +82,72 @@
                                                 </span>
                                             </td>
 
-                                            <td>
+                                            <td class="text-center">
+                                                <div class="kt-menu flex-inline" data-kt-menu="true">
+                                                    <div class="kt-menu-item" data-kt-menu-item-offset="0, 10px"
+                                                        data-kt-menu-item-placement="bottom-end"
+                                                        data-kt-menu-item-placement-rtl="bottom-start"
+                                                        data-kt-menu-item-toggle="dropdown"
+                                                        data-kt-menu-item-trigger="click">
+                                                        <button
+                                                            class="kt-menu-toggle kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost">
+                                                            <i class="ki-filled ki-dots-vertical text-lg">
+                                                            </i>
+                                                        </button>
+                                                        <div class="kt-menu-dropdown kt-menu-default w-full max-w-[175px]"
+                                                            data-kt-menu-dismiss="true">
+                                                            <div class="kt-menu-item">
+                                                                <a href="{{ route('content-source.edit', Crypt::encrypt($s->id)) }}"
+                                                                    class="kt-menu-link">
+                                                                    <span class="kt-menu-icon">
+                                                                        <i class="ki-filled ki-pencil">
+                                                                        </i>
+                                                                    </span>
+                                                                    <span class="kt-menu-title">
+                                                                        Edit
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="kt-menu-item">
+                                                                <form
+                                                                    action="{{ route('content-source.delete', Crypt::encrypt($s->id)) }}"
+                                                                    method="POST" class="inline">
+                                                                    @csrf
+                                                                    <button type="submit"
+                                                                        onclick="return confirm('Yakin hapus, {{ $s->identifier }} dari sources?')"
+                                                                        class="kt-menu-link">
+                                                                        <span class="kt-menu-icon">
+                                                                            <i class="ki-filled ki-trash">
+                                                                            </i>
+                                                                        </span>
+                                                                        <span class="kt-menu-title">
+                                                                            Remove
+                                                                        </span>
+                                                                    </button>
+                                                                </form>
+
+                                                            </div>
+                                                            <div class="kt-menu-item">
+                                                                <form method="POST"
+                                                                    action="{{ route('scrape', Crypt::encrypt($s->id)) }}">
+                                                                    @csrf
+                                                                    <button class="kt-menu-link">
+                                                                        <span class="kt-menu-icon">
+                                                                            <i class="ki-filled ki-search-list">
+                                                                            </i>
+                                                                        </span>
+                                                                        <span class="kt-menu-title">
+                                                                            Scrap Sekarang
+                                                                        </span>
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            {{-- <td>
                                                 <a href="{{ route('content-source.edit', Crypt::encrypt($s->id)) }}"
                                                     class="kt-btn kt-btn-sm kt-btn-outline kt-btn-primary">
                                                     Edit
@@ -101,7 +166,7 @@
                                                     @csrf
                                                     <button class="kt-btn">Scrape Sekarang</button>
                                                 </form>
-                                            </td>
+                                            </td> --}}
                                         </tr>
                                     @endforeach
                                 </tbody>
