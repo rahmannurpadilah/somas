@@ -1,10 +1,9 @@
 @extends('admin.layout')
 
 @section('content')
+    @include('partials.alert')
 
-@include('partials.alert')
-
-   <div class="kt-container-fixed">
+    <div class="kt-container-fixed">
         <div class="kt-container-fixed">
             <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
                 <div class="flex flex-col justif-ceter gap-2">
@@ -17,11 +16,12 @@
                         Add Content Source
                         <i class="ki-filled ki-plus"></i>
                     </a>
+
                 </div>
             </div>
         </div>
 
-           <div class="grid gap-5 lg:gap-7.5">
+        <div class="grid gap-5 lg:gap-7.5">
             <div class="kt-card kt-card-grid min-w-full">
                 <div class="kt-card-header flex-wrap gap-2">
                     <h3 class="kt-card-title text-sm">
@@ -90,10 +90,16 @@
                                                 <form action="{{ route('content-source.delete', Crypt::encrypt($s->id)) }}"
                                                     method="POST" class="inline">
                                                     @csrf
-                                                    <button type="submit" onclick="return confirm('Yakin hapus, {{ $s->identifier }} dari sources?')"
+                                                    <button type="submit"
+                                                        onclick="return confirm('Yakin hapus, {{ $s->identifier }} dari sources?')"
                                                         class="kt-btn kt-btn-sm kt-btn-outline kt-btn-danger">
                                                         Delete
                                                     </button>
+                                                </form>
+                                                <form method="POST"
+                                                    action="{{ route('content-source.create', Crypt::encrypt($s->id)) }}">
+                                                    @csrf
+                                                    <button class="kt-btn">Scrape Sekarang</button>
                                                 </form>
                                             </td>
                                             <td></td>
@@ -109,6 +115,7 @@
                                 Show
                                 <select class="kt-select w-16" data-kt-datatable-size="true" name="perpage"></select>
                                 per page
+
                             </div>
                             <div class="flex items-center gap-4 order-1 md:order-2">
                                 <span data-kt-datatable-info="true"></span>
@@ -121,5 +128,4 @@
             </div>
         </div>
     </div>
-
 @endsection

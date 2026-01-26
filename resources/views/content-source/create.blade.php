@@ -39,7 +39,7 @@
                             </option>
                         </select>
                     </div>
-                    
+
                     <div class="grid gap-1.5">
                         <label class="kt-form-label">Identifier</label>
                         <input
@@ -61,9 +61,11 @@
                     </div>
 
                     <div class="flex items-center gap-2 pt-4">
+
                         <button type="submit" class="kt-btn kt-btn-primary">
                             Simpan
                         </button>
+
 
                         <a href="{{ route('content-source.index') }}" class="kt-btn kt-btn-outline">
                             Cancel
