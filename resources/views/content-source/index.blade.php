@@ -97,7 +97,7 @@
                                                     </button>
                                                 </form>
                                                 <form method="POST"
-                                                    action="{{ route('content-source.create', Crypt::encrypt($s->id)) }}">
+                                                    action="{{ route('scrape', Crypt::encrypt($s->id)) }}">
                                                     @csrf
                                                     <button class="kt-btn">Scrape Sekarang</button>
                                                 </form>
