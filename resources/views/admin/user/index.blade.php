@@ -116,19 +116,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                {{-- <a href="{{ route('admin.user.edit', Crypt::encrypt($user->id)) }}"
-                                                    class="kt-btn kt-btn-sm kt-btn-outline kt-btn-primary">
-                                                    Edit
-                                                </a> --}}
-                                                {{-- <form action="{{ route('admin.user.delete', Crypt::encrypt($user->id)) }}"
-                                                    method="POST" class="inline">
-                                                    @csrf
-                                                    <button type="submit"
-                                                        onclick="return confirm('Yakin hapus, {{ $user->name }} dari users?')"
-                                                        class="kt-btn kt-btn-sm kt-btn-outline kt-btn-danger">
-                                                        Delete
-                                                    </button>
-                                                </form> --}}
                                             </td>
                                             <td></td>
                                         </tr>

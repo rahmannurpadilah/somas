@@ -146,27 +146,6 @@
                                                     </div>
                                                 </div>
                                             </td>
-
-                                            {{-- <td>
-                                                <a href="{{ route('content-source.edit', Crypt::encrypt($s->id)) }}"
-                                                    class="kt-btn kt-btn-sm kt-btn-outline kt-btn-primary">
-                                                    Edit
-                                                </a>
-                                                <form action="{{ route('content-source.delete', Crypt::encrypt($s->id)) }}"
-                                                    method="POST" class="inline">
-                                                    @csrf
-                                                    <button type="submit"
-                                                        onclick="return confirm('Yakin hapus, {{ $s->identifier }} dari sources?')"
-                                                        class="kt-btn kt-btn-sm kt-btn-outline kt-btn-danger">
-                                                        Delete
-                                                    </button>
-                                                </form>
-                                                <form method="POST"
-                                                    action="{{ route('scrape', Crypt::encrypt($s->id)) }}">
-                                                    @csrf
-                                                    <button class="kt-btn">Scrape Sekarang</button>
-                                                </form>
-                                            </td> --}}
                                         </tr>
                                     @endforeach
                                 </tbody>
