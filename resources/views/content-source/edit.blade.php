@@ -49,7 +49,7 @@
 
                         <div class="grid gap-1.5">
                             <label class="kt-form-label">Category</label>
-                            <input type="text" name="category" class="kt-input" value="{{ $source->category }}" required>
+                            <input type="text" name="category" class="kt-input" value="{{ $source->category }}">
                         </div>
 
                             <div class="grid gap-1.5">

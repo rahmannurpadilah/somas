@@ -77,7 +77,7 @@
                             </a>
                         </div>
                 </div>
-
+            @if (auth()->check() && auth()->user()->role == 'admin')
                 <div class="kt-menu-item pt-2.25 pb-px">
                     <span class="kt-menu-heading uppercase text-xs font-medium ps-[10px] pe-[10px]">
                         User
@@ -99,6 +99,7 @@
                             </a>
                         </div>
                 </div>
+                @endif
 
             </div>
 

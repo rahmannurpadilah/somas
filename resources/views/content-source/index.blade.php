@@ -25,7 +25,7 @@
             <div class="kt-card kt-card-grid min-w-full">
                 <div class="kt-card-header flex-wrap gap-2">
                     <h3 class="kt-card-title text-sm">
-                        Showing {{ $sources->count() }} users
+                        Showing {{ $sources->count() }} Content Source
                     </h3>
                     <div class="flex flex-wrap">
                         <div class="flex">
