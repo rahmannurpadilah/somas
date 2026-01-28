@@ -125,7 +125,6 @@
                                                                         </span>
                                                                     </button>
                                                                 </form>
-
                                                             </div>
                                                             <div class="kt-menu-item">
                                                                 <form method="POST"

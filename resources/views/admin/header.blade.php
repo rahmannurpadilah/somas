@@ -1,6 +1,5 @@
    <header class="kt-header fixed top-0 z-10 start-0 end-0 flex items-stretch shrink-0 bg-background"
        data-kt-sticky="true" data-kt-sticky-class="border-b border-border" data-kt-sticky-name="header" id="header">
-       <!-- Container -->
        <div class="kt-container-fixed flex justify-between items-stretch lg:gap-4" id="headerContainer">
            <!-- Mobile Logo -->
            <div class="flex gap-2.5 lg:hidden items-center -ms-1">
@@ -64,12 +63,8 @@
                        </div>
                        <!--End of Megamenu-->
                    </div>
-                   <!--End of Megamenu Wrapper-->
                </div>
-               <!--End of Megamenu Inner-->
            </div>
-           <!--End of Megamenu Contaoner-->
-           <!-- Topbar -->
            <div class="flex items-center gap-2.5">
                <!-- Search -->
                {{-- <button class="group kt-btn kt-btn-ghost kt-btn-icon size-9 rounded-full hover:bg-primary/10 hover:[&_i]:text-primary" data-kt-modal-toggle="#search_modal">

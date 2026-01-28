@@ -112,7 +112,7 @@ class AuthController extends Controller
      */
     public function showForgotPassword(): View
     {
-        return view('Auth.forgot-password');
+        return view('Auth.enterEmail');
     }
 
     /**
@@ -150,7 +150,7 @@ class AuthController extends Controller
     {
         $email = request('email');
 
-        return view('Auth.reset-password', compact('token', 'email'));
+        return view('Auth.forgot-password', compact('token', 'email'));
     }
 
     /**

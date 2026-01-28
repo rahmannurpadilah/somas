@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('content')
-    @include('partials.alert')
+@include('partials.alert')
     <div class="kt-container-fixed">
         <div class="kt-container-fixed">
             <h1 class="text-xl font-medium leading-none text-mono">
@@ -99,6 +99,7 @@
                         </div>
                         <div class="mx-5 mb-4">
                             <h2>Daily</h2>
+                            <p class="text-mono text-muted"></p>
                         </div>
                     </div>
                 </div>

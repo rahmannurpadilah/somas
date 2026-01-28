@@ -30,7 +30,7 @@
        <label class="kt-form-label font-normal text-mono">
         Password
        </label>
-       <a class="text-sm kt-link shrink-0" href="html/demo4/authentication/classic/reset-password/enter-email.html">
+       <a class="text-sm kt-link shrink-0" href="{{ route('auth.forgot-password') }}">
         Forgot Password?
        </a>
       </div>

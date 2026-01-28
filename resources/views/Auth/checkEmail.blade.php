@@ -20,7 +20,7 @@
       to reset your password. Thank you
      </div>
      <div class="flex justify-center mb-5">
-      <a class="kt-btn kt-btn-primary flex justify-center" href="html/demo1/authentication/classic/reset-password/change-password.html">
+      <a class="kt-btn kt-btn-primary flex justify-center" href="">
        Skip for now
       </a>
      </div>
