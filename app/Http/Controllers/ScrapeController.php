@@ -6,12 +6,11 @@ use App\Jobs\TriggerApifyScrape;
 use App\Models\ContentSources;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 
 class ScrapeController extends Controller
 {
-    public function start(String $hash)
+    public function start(string $hash)
     {
         try {
             $id = Crypt::decrypt($hash);

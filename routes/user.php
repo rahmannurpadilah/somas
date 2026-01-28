@@ -4,6 +4,7 @@ use App\Http\Controllers\ApifyWebhookController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContentSourcesController;
 use App\Http\Controllers\ScrapeController;
+use Illuminate\Foundation\Http\Middleware\ValidateCsrfToken;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['user'])->group(function () {
@@ -52,10 +53,10 @@ Route::middleware(['user'])->group(function () {
     });
     
     Route::post('/scrape/{hash}', [ScrapeController::class, 'start'])->name('scrape');
-    Route::post('/webhook/apify', [ApifyWebhookController::class, 'handle'])->name('apify.webhook');
 
 
     Route::prefix('content-ideas/')->name('content-ideas')->group(function () {
     });
 
 });
+

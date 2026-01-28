@@ -17,6 +17,7 @@ return [
     'apify' => [
         'token' => env('APIFY_API_TOKEN'),
         'instagram_actor' => env('APIFY_INSTAGRAM_ACTOR'),
+        'instagram_hashtag_actor' => env('APIFY_INSTAGRAM_HASHTAG_ACTOR'),
         'tiktok_actor' => env('APIFY_TIKTOK_ACTOR'),
     ],
 
