@@ -17,7 +17,7 @@
       Your account's security is our priority.
      </div>
      <div class="flex justify-center">
-      <a class="kt-btn kt-btn-primary" href="html/demo1/authentication/classic/sign-in.html">
+      <a class="kt-btn kt-btn-primary" href="{{ route('auth.login') }}">
        Sign in
       </a>
      </div>

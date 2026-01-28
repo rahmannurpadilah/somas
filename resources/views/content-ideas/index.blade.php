@@ -42,12 +42,9 @@
                         </div>
                     </div>
                 </div> --}}
-
             </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-            <!-- ORIGINAL CONTENT -->
             <div class="kt-card">
                 <div class="kt-card-content lg:pt-9 lg:pb-7.5">
 
@@ -71,6 +68,7 @@
                         <i class="ki-filled ki-sms text-muted-foreground mt-0.5"></i>
                         <span>Likes: 100</span>
                     </div>
+
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-6">
                         <i class="ki-filled ki-sms text-muted-foreground mt-0.5"></i>
                         <span>Views: 2000</span>
@@ -90,7 +88,6 @@
             <div class="kt-card border-primary/20">
                 <div class="kt-card-content lg:pt-9 lg:pb-7.5">
 
-                    <!-- Title -->
                     <div class="flex flex-col gap-1 mb-4">
                         <h3 class="text-xl text-mono">AI Generated Content</h3>
                         <span class="kt-badge kt-badge-sm kt-badge-success w-fit">
@@ -98,7 +95,6 @@
                         </span>
                     </div>
 
-                    <!-- Generated Caption -->
                     <div class="mb-5">
                         <p class="text-sm text-secondary-foreground leading-relaxed">
                             Boost your productivity with our latest AI-powered solution!
@@ -149,24 +145,25 @@
         <form method="POST" action="" class="flex flex-col grow overflow-y-auto px-5 py-4 gap-4">
             @csrf
 
-            <div>
+            <div class="grid gap-1.5">
                 <label class="kt-form-label">Final Caption</label>
                 <textarea name="final_caption" class="kt-textarea w-full" rows="3"></textarea>
             </div>
 
-            <div>
+            <div class="grid gap-1.5">
                 <label class="kt-form-label">Final Media Path</label>
-                <input type="text" name="final_media_path" class="kt-input w-full" placeholder="/uploads/media.jpg">
+                <input type="text" name="final_media_path" class="kt-input w-full">
             </div>
 
-            <div>
+            <div class="grid gap-1.5">
                 <label class="kt-form-label">Admin Notes</label>
                 <textarea name="admin_notes" class="kt-textarea w-full" rows="2"></textarea>
             </div>
 
-            <div>
+            <div class="grid gap-1.5">
                 <label class="kt-form-label">Status</label>
                 <select name="status" class="kt-select w-full">
+                    <option value="">Select Status</option>
                     <option value="pending">Pending</option>
                     <option value="approved">Approved</option>
                     <option value="rejected">Rejected</option>
@@ -178,7 +175,7 @@
                     Cancel
                 </button>
                 <button type="submit" class="kt-btn kt-btn-primary">
-                    Save
+                    Submit
                 </button>
             </div>
         </form>

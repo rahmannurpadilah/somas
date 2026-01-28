@@ -3,7 +3,8 @@
 @include('partials.alert')
  <div class="flex items-center justify-center grow bg-center bg-no-repeat page-bg">
    <div class="kt-card max-w-[370px] w-full">
-    <form action="#" class="kt-card-content flex flex-col gap-5 p-10" id="reset_password_change_password_form" method="post">
+    <form action="/reset-password" class="kt-card-content flex flex-col gap-5 p-10" id="reset_password_change_password_form" method="post">
+        @csrf
      <div class="text-center">
       <h3 class="text-lg font-medium text-mono">
        Reset Password

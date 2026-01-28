@@ -68,10 +68,10 @@
         <div class="lg:col-span-2">
          <style>
           .entry-callout-bg {
-		background-image: url('assets/media/images/2600x1600/2.png');
+		background-image: url('{{ asset('assets/media/images/2600x1600/2.png') }}');
 	}
 	.dark .entry-callout-bg {
-		background-image: url('assets/media/images/2600x1600/2-dark.png');
+		background-image: url('{{ asset('assets/media/images/2600x1600/2-dark.png') }}');
 	}
          </style>
          {{-- <div class="kt-card h-full h-full">
