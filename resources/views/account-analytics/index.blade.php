@@ -47,6 +47,24 @@
                     <div class="flex items-center gap-4">
                         <!-- Logo kiri -->
                         <img alt="" class="w-8 h-8"
+                            src="{{ asset('assets/media/brand-logos/paper.svg') }}" />
+
+                        <div class="flex flex-col">
+                            <span class="text-lg font-semibold text-mono">
+                                Total Following
+                            </span>
+                            <span class="text-2xl font-bold text-secondary-foreground">
+                                 160,000
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="kt-card gap-4 p-5 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
+                    <div class="flex items-center gap-4">
+                        <!-- Logo kiri -->
+                        <img alt="" class="w-8 h-8"
                             src="{{ asset('assets/media/brand-logos/pinterest-circle.svg') }}" />
 
                         <div class="flex flex-col">

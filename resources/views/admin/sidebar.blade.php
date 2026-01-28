@@ -53,7 +53,7 @@
                         <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
                             <i class="ki-filled ki-artificial-intelligence text-lg"></i>
                         </span>
-                        <a href="#">
+                        <a href="{{ route('content-ideas.index') }}">
                         <span
                                 class="kt-menu-title text-sm font-medium text-foreground
                        kt-menu-item-active:text-primary

@@ -9,9 +9,7 @@
                     </h1>
                 </div>
                 <div class="flex items-center">
-                    <button type="button" class="kt-btn kt-btn-primary" data-kt-drawer-toggle="#admin_drawer">
-                        Admin Curation
-                        <i class="ki-filled ki-search-list"></i>
+                    <button type="button" class="kt-btn kt-btn-primary" data-kt-drawer-toggle="#admin_drawer">                        Admin Curation
                     </button>
                 </div>
                 {{-- <div class="flex items-center">
@@ -121,9 +119,7 @@
                     <div class="text-xs text-secondary-foreground">Gen Time</div>
                 </div> --}}
                     </div>
-
                 </div>
-
                 <div class="kt-card-footer flex">
                     <a class="kt-btn kt-btn-primary w-full">Use Content</a>
                     {{-- <a class="kt-btn kt-btn-outline w-full">Regenerate</a> --}}
@@ -165,17 +161,16 @@
                 <select name="status" class="kt-select w-full">
                     <option value="">Select Status</option>
                     <option value="pending">Pending</option>
-                    <option value="approved">Approved</option>
-                    <option value="rejected">Rejected</option>
+                    <option value="process">Process</option>
+                    <option value="success">Success</option>
+                    <option value="failed">Failed</option>
                 </select>
             </div>
 
-            <div class="flex justify-end gap-2 mt-4">
-                <button type="button" class="kt-btn kt-btn-outline" data-kt-drawer-dismiss="true">
-                    Cancel
-                </button>
-                <button type="submit" class="kt-btn kt-btn-primary">
-                    Submit
+            <div class="mt-4">
+                <button type="submit" class="kt-btn kt-btn-primary w-full">
+                        <i class="ki-filled ki-search-list"></i>
+                    Save
                 </button>
             </div>
         </form>

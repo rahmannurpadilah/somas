@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApifyWebhookController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContentIdeasController;
 use App\Http\Controllers\ContentSourcesController;
 use App\Http\Controllers\ScrapeController;
 use Illuminate\Foundation\Http\Middleware\ValidateCsrfToken;
@@ -31,31 +32,33 @@ Route::middleware(['user'])->group(function () {
     });
 
     Route::prefix('content-source')->name('content-source.')->group(function () {
-        
+
         Route::get('/index', [ContentSourcesController::class, 'index'])
             ->name('index');
-    
+
         Route::get('/create', [ContentSourcesController::class, 'create'])
             ->name('create');
-    
+
         Route::post('/create', [ContentSourcesController::class, 'make'])
             ->name('make');
-    
+
         Route::get('/edit/{hash}', [ContentSourcesController::class, 'edit'])
             ->name('edit');
-    
+
         Route::post('/edit', [ContentSourcesController::class, 'update'])
             ->name('update');
-    
+
         Route::post('/delete/{hash}', [ContentSourcesController::class, 'delete'])
             ->name('delete');
-    
+
     });
-    
+
     Route::post('/scrape/{hash}', [ScrapeController::class, 'start'])->name('scrape');
 
 
-    Route::prefix('content-ideas/')->name('content-ideas')->group(function () {
+    Route::prefix('content-ideas/')->name('content-ideas.')->group(function () {
+        Route::get('/index', [ContentIdeasController::class, 'index'])
+        ->name('index');
     });
 
 });
