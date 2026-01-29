@@ -45,31 +45,31 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div class="kt-card">
                 <div class="kt-card-content lg:pt-9 lg:pb-7.5">
-
+                    @if ($content)
                     <!-- Title -->
                     <div class="flex flex-col gap-1 mb-4">
                         <h3 class="text-xl text-mono">Original Content</h3>
-                        <a class="text-sm text-primary font-medium" href="#">
-                            Original Url
+                        <a class="text-sm text-primary font-medium" href="{{ $content->original_url }}">
+                            {{ $content->original_url }}
                         </a>
                     </div>
 
                     <!-- Caption -->
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-3">
                         <i class="ki-filled ki-abstract-41 text-muted-foreground mt-0.5"></i>
-                        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis iusto quos eum hic
-                            dolorum et debitis rerum. Consequatur ullam nulla nihil ratione, minus cumque ipsa explicabo!
-                            Quidem voluptas veniam laudantium.</span>
+                        <span>{{ $content->original_caption }}</span>
                     </div>
 
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-6">
+                        Likes:
                         <i class="ki-filled ki-sms text-muted-foreground mt-0.5"></i>
-                        <span>Likes: 100</span>
+                        <span>{{ $content->original_stats['likes'] }}</span>
                     </div>
 
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-6">
+                        View:
                         <i class="ki-filled ki-sms text-muted-foreground mt-0.5"></i>
-                        <span>Views: 2000</span>
+                        <span>{{ $content->original_stats['views'] }}</span>
                     </div>
 
                 </div>
@@ -81,6 +81,7 @@
                     </a>
                 </div>
             </div>
+                    @endif
 
             <!-- AI GENERATED CONTENT -->
             <div class="kt-card border-primary/20">

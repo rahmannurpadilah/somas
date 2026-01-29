@@ -13,7 +13,8 @@ class ContentIdeasController extends Controller
     public function index()
     {
         //
-        return view('content-ideas.index');
+        $content = ContentIdeas::latest()->first();
+        return view('content-ideas.index', compact('content'));
     }
 
     /**
