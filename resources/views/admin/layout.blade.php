@@ -40,6 +40,8 @@
     <link href="{{ asset('assets/vendors/apexcharts/apexcharts.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/vendors/keenicons/styles.bundle.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"/>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
     </head>
     <body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed">
         <!-- Theme Mode -->
@@ -103,5 +105,6 @@
     </script>
     <script src="{{ asset('assets/js/layouts/demo1.js') }}">
     </script>
+    @stack('scripts')
     </body>
     </html>
