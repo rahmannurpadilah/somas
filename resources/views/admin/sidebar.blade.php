@@ -68,7 +68,7 @@
                         <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
                             <i class="ki-filled ki-financial-schedule text-lg"></i>
                         </span>
-                        <a href="#">
+                        <a href="{{ route('account-analytics.index') }}">
                             <span
                                 class="kt-menu-title text-sm font-medium text-foreground
                        kt-menu-item-active:text-primary
@@ -97,7 +97,7 @@
                        kt-menu-link-hover:!text-primary">Manage
                                 User</span>
                             </a>
-                        </div>
+                    </div>
                 </div>
                 @endif
 

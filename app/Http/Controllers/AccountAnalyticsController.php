@@ -13,6 +13,7 @@ class AccountAnalyticsController extends Controller
     public function index()
     {
         //
+        return view('account-analytics.index');
     }
 
     /**

@@ -4,9 +4,9 @@
     <div class="kt-container-fixed">
         <div class="kt-container-fixed">
             <h1 class="text-xl font-medium leading-none text-mono">
-                        Manage User
+                        Account Analytics
                     </h1>
-            <div class="flex flex-wrap justify-between">
+            {{-- <div class="flex flex-wrap justify-between my-5">
                 <div
                     class="kt-card gap-4 p-5 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
                     <div class="flex items-center gap-4">
@@ -77,7 +77,83 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
+    <div class="grid gap-5 lg:gap-7.5 my-5">
+       <!-- begin: grid -->
+       <div class="grid lg:grid-cols-3 gap-y-5 lg:gap-7.5 items-stretch">
+        <div class="lg:col-span-1">
+         <div class="grid grid-cols-2 gap-5 lg:gap-7.5 h-full items-stretch">
+          <style>
+           .channel-stats-bg {
+		background-image: url('{{ asset('assets/media/images/2600x1600/bg-3.png') }}');
+            }
+            .dark .channel-stats-bg {
+                background-image: url('{{ asset('assets/media/images/2600x1600/bg-3-dark.png') }}');
+            }
+          </style>
+          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
+            <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/brand-logos/instagram-03.svg') }}"/>
+           <div class="flex flex-col gap-1 pb-4 px-5">
+            <span class="text-3xl font-semibold text-mono">
+             Instagram
+            </span>
+            <span class="text-sm font-normal text-secondary-foreground">
+             Platform
+            </span>
+           </div>
+          </div>
+          {{-- Yt --}}
+          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
+           <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/brand-logos/youtube-2.svg') }}"/>
+           <div class="flex flex-col gap-1 pb-4 px-5">
+            <span class="text-3xl font-semibold text-mono">
+             24k
+            </span>
+            <span class="text-sm font-normal text-secondary-foreground">
+             Followers Count
+            </span>
+           </div>
+          </div>
+
+          {{-- Instagram --}}
+          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
+           <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/illustrations/28.svg') }}"/>
+           <div class="flex flex-col gap-1 pb-4 px-5">
+            <span class="text-3xl font-semibold text-mono">
+             7.5k
+            </span>
+            <span class="text-sm font-normal text-secondary-foreground">
+             Following Count
+            </span>
+           </div>
+          </div>
+
+          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
+            <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/illustrations/31.svg') }}"/>
+           <div class="flex flex-col gap-1 pb-4 px-5">
+            <span class="text-3xl font-semibold text-mono">
+             16k
+            </span>
+            <span class="text-sm font-normal text-secondary-foreground">
+             Total Likes
+            </span>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="lg:col-span-2">
+         <style>
+          .entry-callout-bg {
+		background-image: url('{{ asset('assets/media/images/2600x1600/2.png') }}');
+	}
+	.dark .entry-callout-bg {
+		background-image: url('{{ asset('assets/media/images/2600x1600/2-dark.png') }}');
+	}
+         </style>
+        </div>
+       </div>
+       <!-- end: grid -->
+      </div>
 
             <div class="lg:col-span-2">
                 <div class="kt-card h-full">
@@ -117,7 +193,6 @@
                         </div>
                         <div class="mx-5 mb-4">
                             <h2>Daily</h2>
-                            <p class="text-mono text-muted"></p>
                         </div>
                     </div>
                 </div>

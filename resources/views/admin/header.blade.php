@@ -33,7 +33,7 @@
                            <!--Megamenu Item-->
                            <div class="kt-menu-item active">
                                <a class="kt-menu-link text-sm text-secondary-foreground font-medium kt-menu-link-hover:text-primary kt-menu-item-active:text-mono kt-menu-item-show:text-primary kt-menu-item-here:text-mono kt-menu-item-active:font-semibold kt-menu-item-here:font-semibold"
-                                   href="html/demo1.html">
+                                   href="{{ route('dashboard') }}">
                                    <span class="kt-menu-title text-nowrap">
                                        Home
                                    </span>
@@ -53,7 +53,7 @@
                            <!--Megamenu Item-->
                            <div class="kt-menu-item active">
                                <a class="kt-menu-link text-sm text-secondary-foreground font-medium kt-menu-link-hover:text-primary kt-menu-item-active:text-mono kt-menu-item-show:text-primary kt-menu-item-here:text-mono kt-menu-item-active:font-semibold kt-menu-item-here:font-semibold"
-                                   href="html/demo1.html">
+                                   href="{{ route('content-source.create') }}">
                                    <span class="kt-menu-title text-nowrap">
                                        Add New Source
                                    </span>

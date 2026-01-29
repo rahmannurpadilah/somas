@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountAnalyticsController;
 use App\Http\Controllers\ApifyWebhookController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContentIdeasController;
@@ -58,6 +59,11 @@ Route::middleware(['user'])->group(function () {
 
     Route::prefix('content-ideas/')->name('content-ideas.')->group(function () {
         Route::get('/index', [ContentIdeasController::class, 'index'])
+        ->name('index');
+    });
+
+    Route::prefix('account-analytics-/')->name('account-analytics.')->group(function () {
+        Route::get('/index', [AccountAnalyticsController::class, 'index'])
         ->name('index');
     });
 
