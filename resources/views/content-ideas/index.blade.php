@@ -9,69 +9,42 @@
                     </h1>
                 </div>
                 <div class="flex items-center">
-                    <button type="button" class="kt-btn kt-btn-primary" data-kt-drawer-toggle="#admin_drawer">                        Admin Curation
-                    </button>
+                <button type="button" class="kt-btn kt-btn-primary" data-kt-drawer-toggle="#admin_drawer">
+                Admin Curation
+                </button>
                 </div>
-                {{-- <div class="flex items-center">
-                    <div class="kt-menu flex-inline" data-kt-menu="true">
-                        <div class="kt-menu-item" data-kt-menu-item-offset="0, 10px" data-kt-menu-item-placement="bottom-end"
-                            data-kt-menu-item-placement-rtl="bottom-start" data-kt-menu-item-toggle="dropdown"
-                            data-kt-menu-item-trigger="click">
-                            <button class="kt-menu-toggle kt-btn kt-btn-sm kt-btn-icon kt-btn-ghost">
-                                <i class="ki-filled ki-dots-vertical text-lg">
-                                </i>
-                            </button>
-                            <div class="kt-menu-dropdown kt-menu-default w-full max-w-[175px]" data-kt-menu-dismiss="true">
-                                <div class="kt-menu-item">
-                                    <form method="POST" action="">
-                                        @csrf
-                                        <button type="button" class="kt-menu-link" data-kt-modal-toggle="#adminCurationModal">
-                                            <span class="kt-menu-icon">
-                                                <i class="ki-filled ki-search-list"></i>
-                                            </span>
-                                            <span class="kt-menu-title">
-                                                Content Curation
-                                            </span>
-                                        </button>
 
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div class="kt-card">
                 <div class="kt-card-content lg:pt-9 lg:pb-7.5">
-                    @if ($content)
-                    <!-- Title -->
+                    @if ($detail)
+
                     <div class="flex flex-col gap-1 mb-4">
                         <h3 class="text-xl text-mono">Original Content</h3>
-                        <a class="text-sm text-primary font-medium" href="{{ $content->original_url }}">
-                            {{ $content->original_url }}
+                        <a class="text-sm text-primary font-medium" href="{{ $detail->original_url }}">
+                            {{ $detail->original_url }}
                         </a>
                     </div>
 
-                    <!-- Caption -->
+
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-3">
                         <i class="ki-filled ki-abstract-41 text-muted-foreground mt-0.5"></i>
-                        <span>{{ $content->original_caption }}</span>
+                        <span>{{ $detail->original_caption }}</span>
                     </div>
 
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-6">
                         Likes:
                         <i class="ki-filled ki-sms text-muted-foreground mt-0.5"></i>
-                        <span>{{ $content->original_stats['likes'] }}</span>
+                        <span>{{ $detail->original_stats['likes'] }}</span>
                     </div>
 
                     <div class="flex items-start gap-2 text-sm text-secondary-foreground mb-6">
                         View:
                         <i class="ki-filled ki-sms text-muted-foreground mt-0.5"></i>
-                        <span>{{ $content->original_stats['views'] }}</span>
+                        <span>{{ $detail->original_stats['views'] }}</span>
                     </div>
-
                 </div>
 
                 <div class="kt-card-footer">
@@ -81,10 +54,9 @@
                     </a>
                 </div>
             </div>
-                    @endif
 
-            <!-- AI GENERATED CONTENT -->
-            <div class="kt-card border-primary/20">
+
+            <div class="kt-card">
                 <div class="kt-card-content lg:pt-9 lg:pb-7.5">
 
                     <div class="flex flex-col gap-1 mb-4">
@@ -96,39 +68,32 @@
 
                     <div class="mb-5">
                         <p class="text-sm text-secondary-foreground leading-relaxed">
-                            Boost your productivity with our latest AI-powered solution!
-                            Designed to help you create, scale, and engage faster than ever.
+                            {{ $detail->ai_generated_caption }}
                         </p>
                     </div>
 
                     <div class="flex flex-col gap-3">
                         <div class="border-dashed border rounded-md px-3 py-2">
                             <span class="text-mono text-sm font-medium">ai generated script</span>
-                            <div class="text-xs text-secondary-foreground">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Facilis voluptates nam nemo molestias magni, commodi consequuntur earum
-                                quo. Ab doloremque ex commodi dolores perspiciatis? Provident dolores obcaecati nam!
-                                Architecto, mollitia?</div>
+                            <div class="text-xs text-secondary-foreground">{{ $detail->ai_generated_script }}</div>
                         </div>
 
                         <div class="border-dashed border rounded-md px-3 py-2">
                             <span class="text-mono text-sm font-medium">ai status</span>
-                            <div class="text-xs text-secondary-foreground">Processing</div>
+                            <div class="text-xs text-secondary-foreground">{{ $detail->ai_status }}</div>
                         </div>
-                        {{--
-                <div class="border-dashed border rounded-md px-3 py-2">
-                    <span class="text-mono text-sm font-medium">3s</span>
-                    <div class="text-xs text-secondary-foreground">Gen Time</div>
-                </div> --}}
                     </div>
                 </div>
                 <div class="kt-card-footer flex">
-                    <a class="kt-btn kt-btn-primary w-full">Use Content</a>
+                    <a class="kt-btn kt-btn-primary w-full">Approve</a>
                     {{-- <a class="kt-btn kt-btn-outline w-full">Regenerate</a> --}}
                 </div>
+                    @endif
+
             </div>
         </div>
     </div>
-    <!-- Admin Curation Drawer -->
+
     <div class="hidden kt-drawer kt-drawer-end card flex-col max-w-[90%] w-[450px] top-5 bottom-5 end-5 rounded-xl border border-border"
         data-kt-drawer="true" data-kt-drawer-container="body" id="admin_drawer">
 
@@ -168,10 +133,15 @@
                 </select>
             </div>
 
+            <div class="grid gap-1.5">
+                <label for="date">Tanggal</label>
+                <input type="datetime-local" name="tanggal" id="date">
+            </div>
+
             <div class="mt-4">
                 <button type="submit" class="kt-btn kt-btn-primary w-full">
                         <i class="ki-filled ki-search-list"></i>
-                    Save
+                    Approve
                 </button>
             </div>
         </form>

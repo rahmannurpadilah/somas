@@ -13,16 +13,19 @@ class ContentIdeasController extends Controller
     public function index()
     {
         //
-        $content = ContentIdeas::latest()->first();
-        return view('content-ideas.index', compact('content'));
+        // $content = ContentIdeas::latest()->first();
+        $content = ContentIdeas::all();
+        return view('content-ideas.tables', compact('content'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function detail($id)
     {
         //
+        $detail = ContentIdeas::find($id);
+        return view('content-ideas.index',compact('detail'));
     }
 
     /**

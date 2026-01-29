@@ -60,6 +60,8 @@ Route::middleware(['user'])->group(function () {
     Route::prefix('content-ideas/')->name('content-ideas.')->group(function () {
         Route::get('/index', [ContentIdeasController::class, 'index'])
         ->name('index');
+        Route::get('/detail/{id}', [ContentIdeasController::class, 'detail'])
+        ->name('details');
     });
 
     Route::prefix('account-analytics-/')->name('account-analytics.')->group(function () {
