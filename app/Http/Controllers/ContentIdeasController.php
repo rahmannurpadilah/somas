@@ -25,16 +25,29 @@ class ContentIdeasController extends Controller
     {
         //
         $detail = ContentIdeas::find($id);
-        return view('content-ideas.index',compact('detail'));
+        return view('content-ideas.index', compact('detail'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function calendar()
     {
-        //
+        $contents = ContentIdeas::all();
+
+        return view('content-ideas.calendar', compact('contents'));
     }
+
+    public function updateDate(Request $request, $id)
+    {
+        $content = ContentIdeas::findOrFail($id);
+        $content->tanggal = $request->tanggal;
+        $content->save();
+
+        return response()->json(['success' => true]);
+    }
+
+
 
     /**
      * Display the specified resource.

@@ -1,7 +1,7 @@
 @extends('admin.layout')
 @section('content')
-@include('partials.alert')
- <div class="kt-container-fixed">
+    @include('partials.alert')
+    <div class="kt-container-fixed">
         <div class="kt-container-fixed">
             <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
                 <div class="flex flex-col justif-ceter gap-2">
@@ -10,9 +10,8 @@
                     </h1>
                 </div>
                 {{-- <div class="flex items-center">
-                    <a class="kt-btn kt-btn-primary" href="{{ route('admin.user.create') }}">
-                        Add Users
-                        <i class="ki-filled ki-plus"></i>
+                    <a href="{{ route('content-ideas.calendar') }}" class="kt-btn kt-btn-primary">
+                        Calendar View
                     </a>
                 </div> --}}
             </div>
@@ -90,6 +89,16 @@
                                                                     </span>
                                                                     <span class="kt-menu-title">
                                                                         Details
+                                                                    </span>
+                                                                </a>
+                                                                <a href="{{ route('content-ideas.calendar') }}"
+                                                                    class="kt-menu-link">
+                                                                        <span class="kt-menu-icon">
+                                                                        <i class="ki-filled ki-calendar">
+                                                                        </i>
+                                                                    </span>
+                                                                    <span class="kt-menu-title">
+                                                                        Calendar View
                                                                     </span>
                                                                 </a>
                                                             </div>

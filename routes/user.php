@@ -51,7 +51,6 @@ Route::middleware(['user'])->group(function () {
 
         Route::post('/delete/{hash}', [ContentSourcesController::class, 'delete'])
             ->name('delete');
-
     });
 
     Route::post('/scrape/{hash}', [ScrapeController::class, 'start'])->name('scrape');
@@ -59,15 +58,19 @@ Route::middleware(['user'])->group(function () {
 
     Route::prefix('content-ideas/')->name('content-ideas.')->group(function () {
         Route::get('/index', [ContentIdeasController::class, 'index'])
-        ->name('index');
+            ->name('index');
         Route::get('/detail/{id}', [ContentIdeasController::class, 'detail'])
-        ->name('details');
+            ->name('details');
+        Route::get('/content-ideas/calendar', [ContentIdeasController::class, 'calendar'])
+            ->name('calendar');
+        Route::post(
+            '/content-ideas/{id}/update-date',
+            [ContentIdeasController::class, 'updateDate']
+        );
     });
 
     Route::prefix('account-analytics-/')->name('account-analytics.')->group(function () {
         Route::get('/index', [AccountAnalyticsController::class, 'index'])
-        ->name('index');
+            ->name('index');
     });
-
 });
-
