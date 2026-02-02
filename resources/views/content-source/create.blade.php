@@ -16,7 +16,7 @@
                 <form action="{{ route('content-source.make') }}" method="POST" class="grid gap-5">
                     @csrf
 
-                     <div class="grid gap-1.5">
+                    <div class="grid gap-1.5">
                         <label class="kt-form-label">Platform</label>
                         <select name="platform" class="kt-select">
                             <option value="instagram">
@@ -28,7 +28,7 @@
                         </select>
                     </div>
 
-                     <div class="grid gap-1.5">
+                    <div class="grid gap-1.5">
                         <label class="kt-form-label">Type</label>
                         <select name="type" class="kt-select">
                             <option value="username">
@@ -60,7 +60,6 @@
                     </div>
 
                     <div class="flex items-center gap-2 pt-4">
-
                         <button type="submit" class="kt-btn kt-btn-primary">
                             Simpan
                         </button>

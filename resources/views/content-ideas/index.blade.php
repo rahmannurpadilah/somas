@@ -139,15 +139,6 @@
             </select>
         </div>
 
-        <div class="grid gap-1.5">
-            <label class="kt-form-label">Tanggal</label>
-            <input
-                type="date"
-                name="tanggal"
-                class="kt-input w-full"
-                required>
-        </div>
-
         <div class="mt-4">
             <button type="submit" class="kt-btn kt-btn-primary w-full">
                 <i class="ki-filled ki-search-list"></i>

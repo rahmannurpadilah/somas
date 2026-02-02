@@ -66,6 +66,20 @@
                 <div class="kt-menu-item">
                     <div class="kt-menu-link flex items-center gap-[10px] ps-[10px] pe-[10px] py-[6px]">
                         <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
+                            <i class="ki-filled ki-artificial-intelligence text-lg"></i>
+                        </span>
+                        <a href="">
+                        <span
+                                class="kt-menu-title text-sm font-medium text-foreground
+                       kt-menu-item-active:text-primary
+                       kt-menu-link-hover:!text-primary">Prompty</span>
+                            </a>
+                        </div>
+                </div>
+
+                <div class="kt-menu-item">
+                    <div class="kt-menu-link flex items-center gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+                        <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
                             <i class="ki-filled ki-financial-schedule text-lg"></i>
                         </span>
                         <a href="{{ route('account-analytics.index') }}">

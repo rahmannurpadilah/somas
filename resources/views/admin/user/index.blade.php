@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('content')
-    @include('partials.alert')
+@include('partials.alert')
 
     <div class="kt-container-fixed">
         <div class="kt-container-fixed">
