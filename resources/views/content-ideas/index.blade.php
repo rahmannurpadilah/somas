@@ -90,6 +90,7 @@
                                 {{-- <a class="kt-btn kt-btn-outline w-full">Regenerate</a> --}}
                             </div>
                     @endif
+
             </div>
         </div>
     </div>
