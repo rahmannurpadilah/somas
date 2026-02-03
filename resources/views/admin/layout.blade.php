@@ -19,6 +19,7 @@
     <link href="https://127.0.0.1:8001/metronic-tailwind-html/demo1/index.html" rel="canonical"/>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
     <meta content="" name="description"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content="@keenthemes" name="twitter:site"/>
     <meta content="@keenthemes" name="twitter:creator"/>
     <meta content="summary_large_image" name="twitter:card"/>
@@ -41,6 +42,7 @@
     <link href="{{ asset('assets/vendors/keenicons/styles.bundle.css') }}" rel="stylesheet"/>
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet"/>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     @stack('styles')
     </head>
     <body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed">

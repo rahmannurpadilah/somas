@@ -56,8 +56,12 @@
                                                 {{ $loop->iteration }}
                                             </td>
                                             <td class="font-medium text-mono">
-                                                {{ $c->platform }}<br>
-                                                <span class="text-sm text-secondary-foreground"></span>
+                                                 <div class="flex items-center gap-2">
+                                                     <img src="{{ asset('assets/media/brand-logos/' . strtolower($c->platform) . '.svg') }}"
+                                                    class="w-6 h-6 shrink-0" alt="{{ $c->platform }}">
+                                                    {{ $c->platform }}<br>
+                                                    <span class="text-sm text-secondary-foreground"></span>
+                                                </div>
                                             </td>
                                             <td>{{ $c->original_url }}</td>
                                             <td>

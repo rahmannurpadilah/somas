@@ -57,7 +57,7 @@
                                             <td class="font-medium text-mono">
                                                 <div class="flex items-center gap-2">
                                                      <img src="{{ asset('assets/media/brand-logos/' . strtolower($s->platform) . '.svg') }}"
-                                                    class="w-3 h-3" alt="{{ $s->platform }}">
+                                                    class="w-6 h-6 shrink-0" alt="{{ $s->platform }}">
                                                 {{ $s->platform }}
                                                 </div>
                                                 <br>

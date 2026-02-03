@@ -16,7 +16,7 @@
 	}
           </style>
           <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-           <img alt="" class="w-7 mt-4 ms-5" src="assets/media/brand-logos/linkedin-2.svg"/>
+           <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/brand-logos/linkedin-2.svg') }}"/>
            <div class="flex flex-col gap-1 pb-4 px-5">
             <span class="text-3xl font-semibold text-mono">
              9.3k
@@ -28,7 +28,7 @@
           </div>
           {{-- Yt --}}
           <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-           <img alt="" class="w-7 mt-4 ms-5" src="assets/media/brand-logos/youtube-2.svg"/>
+           <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/brand-logos/youtube-2.svg') }}"/>
            <div class="flex flex-col gap-1 pb-4 px-5">
             <span class="text-3xl font-semibold text-mono">
              Status

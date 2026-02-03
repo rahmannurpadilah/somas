@@ -23,7 +23,10 @@
                 <div class="grid grid-cols-2 gap-5 h-full">
                     <div class="kt-card flex flex-col p-5 bg-cover bg-no-repeat channel-stats-bg">
                         <div class="mb-10">
-                            <img alt="" class="w-8 h-8" src="{{ asset('assets/media/brand-logos/instagram-03.svg') }}" />
+                            {{-- <img alt="" class="w-8 h-8" src="{{ asset('assets/media/brand-logos/instagram-03.svg') }}" /> --}}
+                            {{-- <img src="{{ asset('assets/media/brand-logos/' . strtolower($s->platform) . '.svg') }}"
+                                                    class="w-3 h-3" alt="{{ $s->platform }}"> --}}
+                            <i class="ki-duotone ki-share" style="font-size: 40px;"></i>
                         </div>
 
                         <div class="mt-auto flex flex-col gap-1">
