@@ -35,8 +35,7 @@ $calendarEvents = $contents->map(function ($c) {
 @endphp
 
 @push('scripts')
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
-
+{{-- <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script> --}}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');

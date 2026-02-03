@@ -70,8 +70,9 @@
                         </div>
 
                         <div class="flex items-center gap-2 pt-4">
-                            <button type="submit" class="kt-btn kt-btn-primary">
-                                Simpan
+                            <button type="submit" class="kt-btn kt-btn-primary btn-sm px-8 shadow-lg shadow-primary/20">
+                                <i class="ki-duotone ki-update-file fs-3"><span class="path1"></span><span class="path2"></span></i>
+                               Update
                             </button>
 
                             <a href="{{ route('content-source.index') }}" class="kt-btn kt-btn-outline">

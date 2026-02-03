@@ -1,202 +1,207 @@
 @extends('admin.layout')
 @section('content')
-@include('partials.alert')
+    @include('partials.alert')
+
     <div class="kt-container-fixed">
-        <div class="kt-container-fixed">
-            <h1 class="text-xl font-medium leading-none text-mono">
-                        Account Analytics
-                    </h1>
-            {{-- <div class="flex flex-wrap justify-between my-5">
-                <div
-                    class="kt-card gap-4 p-5 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-                    <div class="flex items-center gap-4">
-                        <!-- Logo kiri -->
-                        <img alt="" class="w-8 h-8" src="{{ asset('assets/media/brand-logos/instagram-03.svg') }}" />
+        <h1 class="text-xl font-medium leading-none text-mono mb-5">
+            Account Tracking
+        </h1>
 
-                        <div class="flex flex-col">
-                            <span class="text-lg font-semibold text-mono">
-                                Platform
-                            </span>
-                            <span class="text-2xl font-bold text-secondary-foreground">
-                                150,000
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="kt-card gap-4 p-5 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-                    <div class="flex items-center gap-4">
-                        <!-- Logo kiri -->
-                        <img alt="" class="w-8 h-8"
-                            src="{{ asset('assets/media/brand-logos/paper.svg') }}" />
-
-                        <div class="flex flex-col">
-                            <span class="text-lg font-semibold text-mono">
-                                Total Followers
-                            </span>
-                            <span class="text-2xl font-bold text-secondary-foreground">
-                                 160,000
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="kt-card gap-4 p-5 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-                    <div class="flex items-center gap-4">
-                        <!-- Logo kiri -->
-                        <img alt="" class="w-8 h-8"
-                            src="{{ asset('assets/media/brand-logos/paper.svg') }}" />
-
-                        <div class="flex flex-col">
-                            <span class="text-lg font-semibold text-mono">
-                                Total Following
-                            </span>
-                            <span class="text-2xl font-bold text-secondary-foreground">
-                                 160,000
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="kt-card gap-4 p-5 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-                    <div class="flex items-center gap-4">
-                        <!-- Logo kiri -->
-                        <img alt="" class="w-8 h-8"
-                            src="{{ asset('assets/media/brand-logos/pinterest-circle.svg') }}" />
-
-                        <div class="flex flex-col">
-                            <span class="text-lg font-semibold text-mono">
-                                Content Posted Today
-                            </span>
-                            <span class="text-2xl font-bold text-secondary-foreground">
-                                 3
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-    <div class="grid gap-5 lg:gap-7.5 my-5">
-       <!-- begin: grid -->
-       <div class="grid lg:grid-cols-3 gap-y-5 lg:gap-7.5 items-stretch">
-        <div class="lg:col-span-1">
-         <div class="grid grid-cols-2 gap-5 lg:gap-7.5 h-full items-stretch">
-          <style>
-           .channel-stats-bg {
-		background-image: url('{{ asset('assets/media/images/2600x1600/bg-3.png') }}');
+        <style>
+            .channel-stats-bg {
+                background-image: url('{{ asset('assets/media/images/2600x1600/bg-3.png') }}');
             }
+
             .dark .channel-stats-bg {
                 background-image: url('{{ asset('assets/media/images/2600x1600/bg-3-dark.png') }}');
             }
-          </style>
-          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-            <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/brand-logos/instagram-03.svg') }}"/>
-           <div class="flex flex-col gap-1 pb-4 px-5">
-            <span class="text-3xl font-semibold text-mono">
-             Instagram
-            </span>
-            <span class="text-sm font-normal text-secondary-foreground">
-             Platform
-            </span>
-           </div>
-          </div>
-          {{-- Yt --}}
-          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-           <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/brand-logos/youtube-2.svg') }}"/>
-           <div class="flex flex-col gap-1 pb-4 px-5">
-            <span class="text-3xl font-semibold text-mono">
-             24k
-            </span>
-            <span class="text-sm font-normal text-secondary-foreground">
-             Followers Count
-            </span>
-           </div>
-          </div>
+        </style>
 
-          {{-- Instagram --}}
-          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-           <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/illustrations/28.svg') }}"/>
-           <div class="flex flex-col gap-1 pb-4 px-5">
-            <span class="text-3xl font-semibold text-mono">
-             7.5k
-            </span>
-            <span class="text-sm font-normal text-secondary-foreground">
-             Following Count
-            </span>
-           </div>
-          </div>
+        <div class="grid lg:grid-cols-3 gap-5 lg:gap-7.5 items-stretch">
 
-          <div class="kt-card flex-col justify-between gap-6 h-full bg-cover rtl:bg-[left_top_-1.7rem] bg-[right_top_-1.7rem] bg-no-repeat channel-stats-bg">
-            <img alt="" class="w-7 mt-4 ms-5" src="{{ asset('assets/media/illustrations/31.svg') }}"/>
-           <div class="flex flex-col gap-1 pb-4 px-5">
-            <span class="text-3xl font-semibold text-mono">
-             16k
-            </span>
-            <span class="text-sm font-normal text-secondary-foreground">
-             Total Likes
-            </span>
-           </div>
-          </div>
-         </div>
-        </div>
-        <div class="lg:col-span-2">
-         <style>
-          .entry-callout-bg {
-		background-image: url('{{ asset('assets/media/images/2600x1600/2.png') }}');
-	}
-	.dark .entry-callout-bg {
-		background-image: url('{{ asset('assets/media/images/2600x1600/2-dark.png') }}');
-	}
-         </style>
-        </div>
-       </div>
-       <!-- end: grid -->
-      </div>
+            <div class="lg:col-span-1">
+                <div class="grid grid-cols-2 gap-5 h-full">
+                    <div class="kt-card flex flex-col p-5 bg-cover bg-no-repeat channel-stats-bg">
+                        <div class="mb-10">
+                            <img alt="" class="w-8 h-8" src="{{ asset('assets/media/brand-logos/instagram-03.svg') }}" />
+                        </div>
 
-            <div class="lg:col-span-2">
-                <div class="kt-card h-full">
-                    <div class="kt-card-header">
-                        <h3 class="kt-card-title">
-                            Post Ratings
-                        </h3>
-                        <div class="flex gap-5">
-                            <label class="flex items-center gap-2">
-                                <input class="kt-switch" name="check" type="checkbox" value="1" />
-                                <span class="kt-label">
-                                    Referrals only
-                                </span>
-                            </label>
-                            <select class="kt-select w-36" data-kt-select="true" data-kt-select-placeholder="Select period"
-                                name="kt-select">
-                                <option>
-                                    None
-                                </option>
-                                <option value="1">
-                                    1 month
-                                </option>
-                                <option value="2">
-                                    3 month
-                                </option>
-                                <option value="3">
-                                    6 month
-                                </option>
-                                <option value="4">
-                                    12 month
-                                </option>
-                            </select>
+                        <div class="mt-auto flex flex-col gap-1">
+                            <span
+                                class="text-2xl lg:text-3xl font-bold text-mono tracking-tight text-gray-900 dark:text-white">
+                                instagram
+                            </span>
+                            <span
+                                class="text-xs font-semibold text-secondary-foreground uppercase tracking-widest opacity-70">
+                                Platform
+                            </span>
                         </div>
                     </div>
-                    <div class="kt-card-content flex flex-col justify-end items-stretch grow px-3 py-1">
-                        <div id="earnings_chart">
+
+
+                    <div class="kt-card flex flex-col p-5 bg-cover bg-no-repeat channel-stats-bg">
+                        <div class="mb-10">
+                            <i class="ki-duotone ki-people text-secondary text-5xl" style="font-size: 40px;"></i>
                         </div>
-                        <div class="mx-5 mb-4">
-                            <h2>Daily</h2>
+
+                        <div class="mt-auto flex flex-col gap-1">
+                            <span
+                                class="text-2xl lg:text-3xl font-bold text-mono tracking-tight text-gray-900 dark:text-white">
+                                24K
+                            </span>
+                            <span
+                                class="text-xs font-semibold text-secondary-foreground uppercase tracking-widest opacity-70">
+                                Followers
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="kt-card flex flex-col p-5 bg-cover bg-no-repeat channel-stats-bg">
+                        <div class="mb-10">
+                            <i class="ki-duotone ki-users text-secondary text-5xl" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="mt-auto flex flex-col gap-1">
+                            <span
+                                class="text-2xl lg:text-3xl font-bold text-mono tracking-tight text-gray-900 dark:text-white">
+                                10K
+                            </span>
+                            <span
+                                class="text-xs font-semibold text-secondary-foreground uppercase tracking-widest opacity-70">
+                                Following
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="kt-card flex flex-col p-5 bg-cover bg-no-repeat channel-stats-bg">
+                        <div class="mb-10">
+                            <i class="ki-duotone ki-like text-primary text-5xl" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="mt-auto flex flex-col gap-1">
+                            <span
+                                class="text-2xl lg:text-3xl font-bold text-mono tracking-tight text-gray-900 dark:text-white">
+                                1M
+                            </span>
+                            <span
+                                class="text-xs font-semibold text-secondary-foreground uppercase tracking-widest opacity-70">
+                                Total Likes
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="lg:col-span-2">
+                <div class="kt-card h-full flex flex-col">
+                    <div class="kt-card-header flex justify-between items-center px-5 py-4">
+                        <h3 class="kt-card-title text-lg font-semibold">Growth Chart</h3>
+                         <select class="kt-select w-48 text-sm" id="chart_data_selector">
+                                <option value="followers">Followers Count</option>
+                                <option value="likes">Total Likes</option>
+                                <option value="engagement">Engagement Rate Per-week</option>
+                            </select>
+                    </div>
+                    <div class="kt-card-body grow p-5 flex flex-col justify-center">
+                        <div id="post_chart" class="w-full h-[250px]"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+   @push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var element = document.getElementById('post_chart');
+        if (!element) return;
+
+        // 1. Data Source (Engagement disetel per minggu/7 hari terakhir)
+        const dataSources = {
+            followers: {
+                name: 'Followers',
+                data: [2000, 2100, 2150, 2300, 2400, 2450, 2500],
+                categories: ['Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07'],
+                color: '#0095E8',
+                suffix: ' users'
+            },
+            likes: {
+                name: 'Total Likes',
+                data: [150, 230, 180, 400, 320, 500, 450],
+                categories: ['Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07'],
+                color: '#F1416C',
+                suffix: ' likes'
+            },
+            engagement: {
+                name: 'Engagement Rate',
+                data: [3.2, 4.5, 2.9, 5.1],
+                categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                color: '#50CD89',
+                suffix: '%'
+            }
+        };
+
+        var options = {
+            series: [{
+                name: dataSources.followers.name,
+                data: dataSources.followers.data
+            }],
+            chart: {
+                fontFamily: 'inherit',
+                type: 'area',
+                height: 250,
+                toolbar: { show: false }
+            },
+            colors: [dataSources.followers.color],
+            fill: {
+                type: 'gradient',
+                gradient: { opacityFrom: 0.4, opacityTo: 0, stops: [0, 80, 100] }
+            },
+            stroke: { curve: 'smooth', width: 3 },
+            xaxis: {
+                categories: dataSources.followers.categories,
+                axisBorder: { show: false },
+                axisTicks: { show: false },
+                labels: { style: { colors: '#A1A5B7', fontSize: '12px' } }
+            },
+            yaxis: {
+                labels: {
+                    style: { colors: '#A1A5B7', fontSize: '12px' },
+                    formatter: function (val) { return val; }
+                }
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        let type = document.getElementById('chart_data_selector').value;
+                        return val + dataSources[type].suffix;
+                    }
+                }
+            }
+        };
+
+        var chart = new ApexCharts(element, options);
+        chart.render();
+
+        document.getElementById('chart_data_selector').addEventListener('change', function () {
+            const selectedValue = this.value;
+            const newData = dataSources[selectedValue];
+
+            chart.updateOptions({
+                series: [{
+                    name: newData.name,
+                    data: newData.data
+                }],
+                colors: [newData.color],
+                xaxis: {
+                    categories: newData.categories // Ini penting agar sumbu X berubah jadi "Week"
+                }
+            });
+        });
+    });
+</script>
+@endpush
+
 @endsection
+
+
+
