@@ -1,4 +1,4 @@
-@extends('admin.layout')
+ @extends('admin.layout')
 @section('content')
     @include('partials.alert')
 
@@ -112,7 +112,6 @@
         </div>
     </div>
    @push('scripts')
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var element = document.getElementById('post_chart');
@@ -205,6 +204,8 @@
 @endpush
 
 @endsection
+
+
 
 
 

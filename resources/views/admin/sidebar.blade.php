@@ -1,7 +1,7 @@
 <div class="kt-sidebar bg-background border-e border-e-border fixed top-0 bottom-0 z-20 hidden lg:flex flex-col items-stretch shrink-0 [--kt-drawer-enable:true] lg:[--kt-drawer-enable:false]" data-kt-drawer="true" data-kt-drawer-class="kt-drawer kt-drawer-start top-0 bottom-0" id="sidebar">
     <div  class="kt-sidebar-header hidden lg:flex items-center relative justify-between px-3 lg:px-6 shrink-0" id="sidebar_header">
-     <a class="dark:hidden" href="#">
-            <img class="default-logo min-h-[22px] max-w-none" src="{{ asset('assets/media/app/default-logo-dark.svg') }}"/>
+     <a class="" href="#">
+            <img class="default-logo min-h-[22px] max-w-none" src="{{ asset('assets/media/app/default-logo.svg') }}"/>
             <img class="small-logo min-h-[22px] max-w-none" src="{{ asset('assets/media/app/mini-logo.svg') }}"/>
         </a>
      <a class="hidden dark:block" href="#">
@@ -81,7 +81,7 @@
                         </div>
                 </div>
 
-                <div class="kt-menu-item">
+                {{-- <div class="kt-menu-item">
                     <div class="kt-menu-link flex items-center gap-[10px] ps-[10px] pe-[10px] py-[6px]">
                          <span class="kt-menu-icon items-start text-muted-foreground w-[20px]">
                             <i class="ki-filled ki-artificial-intelligence text-lg"></i>
@@ -90,10 +90,10 @@
                         <span
                                 class="kt-menu-title text-sm font-medium text-foreground
                        kt-menu-item-active:text-primary
-                       kt-menu-link-hover:!text-primary">Prompty</span>
+                       kt-menu-link-hover:!text-primary">Prompt</span>
                             </a>
                         </div>
-                </div>
+                </div> --}}
 
                 <div class="kt-menu-item">
                     <div class="kt-menu-link flex items-center gap-[10px] ps-[10px] pe-[10px] py-[6px]">

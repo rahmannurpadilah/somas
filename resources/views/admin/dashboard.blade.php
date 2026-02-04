@@ -49,48 +49,6 @@
 		background-image: url('{{ asset('assets/media/images/2600x1600/2-dark.png') }}');
 	}
          </style>
-         {{-- <div class="kt-card h-full h-full">
-          <div class="kt-card-content p-10 bg-[length:80%] rtl:[background-position:-70%_25%] [background-position:175%_25%] bg-no-repeat entry-callout-bg">
-           <div class="flex flex-col justify-center gap-4">
-            <div class="flex -space-x-2">
-             <div class="flex">
-              <img class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-10" src="assets/media/avatars/300-4.png"/>
-             </div>
-             <div class="flex">
-              <img class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-10" src="assets/media/avatars/300-1.png"/>
-             </div>
-             <div class="flex">
-              <img class="hover:z-5 relative shrink-0 rounded-full ring-1 ring-background size-10" src="assets/media/avatars/300-2.png"/>
-             </div>
-             <div class="flex">
-              <span class="hover:z-5 relative inline-flex items-center justify-center shrink-0 rounded-full ring-1 font-semibold leading-none text-2xs size-10 text-white text-xs ring-background bg-green-500">
-               S
-              </span>
-             </div>
-            </div>
-            <h2 class="text-xl font-semibold text-mono">
-             Connect Today & Join
-             <br/>
-             the
-             <a class="kt-link" href="#">
-              KeenThemes Network
-             </a>
-            </h2>
-            <p class="text-sm font-normal text-secondary-foreground leading-5.5">
-             Enhance your projects with premium themes and
-             <br/>
-             templates. Join the KeenThemes community today
-             <br/>
-             for top-quality designs and resources.
-            </p>
-           </div>
-          </div>
-          <div class="kt-card-footer justify-center">
-           <a class="kt-link kt-link-underlined kt-link-dashed" href="html/demo1/account/home/get-started.html">
-            Get Started
-           </a>
-          </div>
-         </div> --}}
         </div>
        </div>
        <!-- end: grid -->

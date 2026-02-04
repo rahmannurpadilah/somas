@@ -23,13 +23,13 @@
                         <div>
                             <h3 class="text-lg font-bold text-gray-900 dark:text-white">Connect Account</h3>
                             <p class="text-sm text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
-                                Masukkan username akun sosial media Anda untuk mulai memantau analitik secara real-time.
+                                Masukkan username akun sosial media Anda untuk mulai memantau perkembangan secara real-time.
                             </p>
                         </div>
                         <ul class="flex flex-col gap-3 text-xs text-gray-500">
                             <li class="flex items-center gap-2">
                                 <i class="ki-duotone ki-check-circle text-success"><span class="path1"></span><span class="path2"></span></i>
-                                Mendukung Instagram & TikTok
+                                Mendukung Instagram & Tiktok
                             </li>
                             <li class="flex items-center gap-2">
                                 <i class="ki-duotone ki-check-circle text-success"><span class="path1"></span><span class="path2"></span></i>
@@ -86,5 +86,11 @@
         border-color: var(--kt-primary) !important;
         box-shadow: 0 0 0 3px rgba(0, 149, 232, 0.1);
     }
+       .entry-callout-bg {
+		background-image: url('{{ asset('assets/media/images/2600x1600/2.png') }}');
+	}
+	.dark .entry-callout-bg {
+		background-image: url('{{ asset('assets/media/images/2600x1600/2-dark.png') }}');
+	}
 </style>
 @endsection
